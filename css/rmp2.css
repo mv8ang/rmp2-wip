@@ -1,0 +1,249 @@
+a, img {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+a {
+    color:#2a6496;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    color:#428bca;
+}
+
+::-moz-selection {
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+    text-align: center
+}
+
+.mt {
+    margin-top: 30px;
+    background:#fff;
+}
+
+.mb {
+    margin-bottom: 50px;
+}
+
+/* ==========================================================================
+General styles
+========================================================================== */
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    color: #222;
+}
+
+p {
+    margin: 30px 0;
+}
+
+#works h3 {
+    margin-top: -43px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: #000;
+    padding: 10px 20px;
+    display: table;
+}
+
+
+main .text.left {
+    text-align: justify;    
+}
+
+main h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+Nav Bar and scrolling up effect
+========================================================================== */
+
+.navbar-custom{position:absolute;top:0;left:0;width:100%;z-index:3;letter-spacing:2px}
+.navbar-custom .navbar-brand{font-weight:700}
+.navbar-custom .nav li a{text-transform:uppercase;font-size:14px;font-weight:700;}
+
+@media only screen and (min-width:768px){
+    .navbar-custom{background:0 0;border-bottom:1px solid transparent}
+    .navbar-custom .navbar-brand{color:#fff;padding:20px}
+    .navbar-custom .navbar-brand:hover,.navbar-custom .navbar-brand:focus{color:rgba(255,255,255,.8)}
+
+    .navbar-custom .nav li a{color:#fff; padding:20px}
+    .navbar-custom.is-fixed .nav li a{color:#fff;padding:20px}
+    .navbar-custom .nav .dropdown-menu li a{color:#555; padding:20px}
+
+    .navbar-custom .nav li a:hover,.navbar-custom .nav li a:focus{color:#ccc}
+}
+@media only screen and (min-width:1170px){
+    .navbar-custom{ padding:10px 0; -webkit-transition:background-color .3s;-moz-transition:background-color .3s;transition:background-color .3s;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden}
+    .navbar-custom.is-fixed {position:fixed; top:-81px; padding:10px 0; background-color:rgba(255,255,255,.9);border-bottom:1px solid #f2f2f2;-webkit-transition:-webkit-transform .3s;-moz-transition:-moz-transform .3s;transition:transform .3s}
+    .navbar-custom.is-fixed .navbar-brand{color:#000}
+    .navbar-custom.is-fixed .navbar-brand:hover,.navbar-custom.is-fixed .navbar-brand:focus{color:#777}
+    .navbar-custom.is-fixed .nav li a{color:#000}
+    .navbar-custom.is-fixed .nav li a:hover,.navbar-custom.is-fixed .nav li a:focus{color:#777}
+    .navbar-custom.is-visible{-webkit-transform:translate3d(0,100%,0);-moz-transform:translate3d(0,100%,0);-ms-transform:translate3d(0,100%,0);-o-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #ccc; background-color: transparent;
+}
+
+.navbar-custom.is-fixed .active a {color:#777!important;}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-toggle .icon-bar {
+    width: 24px;
+    height: 3px;
+}
+
+#social {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+a .fa-stack { color:#999; }
+a .fa-circle {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+a:hover .fa-circle  { color: #000;}
+
+
+#footerwrap {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #eee;
+    font-weight: 900;
+}
+
+#footerwrap p {
+    margin-left: 10px;
+}
+
+.overlay {
+    background: rgba(105, 78, 160, 0.5);
+    padding: 230px 0;
+}
+
+.overlay.green {
+    background: rgba(51, 154, 101, 0.5);
+}
+
+#headerwrap { background-image: url(images/header.jpg); }
+
+.allwrap {
+    background-attachment: relative;
+    background-position: center center;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+    color: #fff;
+    padding: 0px;
+    margin: 0;
+    font-size: 70px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#headerwrap p {
+    font-size: 26px;
+    padding-top: 30px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #blogwrap h1, #aboutwrap h1, #headerwrap h1, #workwrap h1 {
+        font-size: 40px;
+    }
+    .overlay {
+        padding: 130px 0 100px;
+    }
+}
+
+.allwrap p {
+    margin: 0;
+}
+
+.allwrap a {
+    color:#fff; border-bottom: 1px solid #ccc;
+}
+
+#blogwrap h4, #headerwrap h4, #workwrap h4 {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.single #blogwrap {
+    text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.rmp-btn-try {
+    border: 2px solid #424242;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
+    background: #339a65;
+}
