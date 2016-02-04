@@ -1,0 +1,31 @@
+/*************************
+* TESTIMONIALS on HOMEPAGE
+**************************/
+
+#testimonials {
+    .single_wcp_testimonial {
+        p {
+            font-style: italic;
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}
+
+div.owl-carousel.owl-theme .single_wcp_testimonial {
+    text-align: center;
+    min-height:330px;
+    
+    img {
+        border-radius: 500px;
+        box-shadow: 0 0 0;
+        border: 3px solid #282828;
+        height: 80px;
+        width: 80px;
+    }
+}
+
