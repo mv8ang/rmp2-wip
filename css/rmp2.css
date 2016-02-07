@@ -8,19 +8,27 @@ a {
 }
 a:hover, a:focus {
   text-decoration: none;
-  color: #428bca;
+  color: #4272b8;
 }
 
 ::-moz-selection {
   background: #333;
-  color: #fff;
+  color: white;
   text-shadow: none;
 }
 
 ::selection {
   background: #333;
-  color: #fff;
+  color: white;
   text-shadow: none;
+}
+
+blockquote {
+  font-style: italic;
+  margin-left: 0;
+  border-left: none;
+  line-height: 1.4;
+  font-weight: normal;
 }
 
 /*
@@ -71,16 +79,12 @@ p {
 
 #works h3 {
   margin-top: -43px;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   font-size: 12px;
   background: #282828;
   padding: 10px 20px;
   display: table;
-}
-
-.container .text.left {
-  text-align: justify;
 }
 
 .container h2 {
@@ -118,7 +122,7 @@ Nav Bar and scrolling up effect
   }
 
   .navbar-custom .navbar-brand {
-    color: #fff;
+    color: white;
     padding: 20px;
   }
 
@@ -128,12 +132,12 @@ Nav Bar and scrolling up effect
   }
 
   .navbar-custom .nav li:not(.rmp-btn-green) a {
-    color: #fff;
+    color: white;
     padding: 20px;
   }
 
   .navbar-custom.is-fixed .nav li a {
-    color: #fff;
+    color: white;
     padding: 20px;
   }
 
@@ -216,7 +220,7 @@ Nav Bar and scrolling up effect
 #social {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #fff;
+  background-color: white;
 }
 
 a .fa-stack {
@@ -230,17 +234,6 @@ a .fa-circle {
 
 a:hover .fa-circle {
   color: #282828;
-}
-
-#footerwrap {
-  padding-top: 70px;
-  padding-bottom: 50px;
-  background-color: #eee;
-  font-weight: 900;
-}
-
-#footerwrap p {
-  margin-left: 10px;
 }
 
 .overlay {
@@ -276,7 +269,7 @@ a:hover .fa-circle {
 }
 
 #headerwrap h1 {
-  color: #fff;
+  color: white;
   padding: 0px;
   margin: 0;
   font-size: 70px;
@@ -286,7 +279,7 @@ a:hover .fa-circle {
 #headerwrap p {
   font-size: 26px;
   padding-top: 30px;
-  color: #fff;
+  color: white;
 }
 #headerwrap .container {
   margin-top: 50px;
@@ -305,12 +298,12 @@ a:hover .fa-circle {
   margin: 0;
 }
 .allwrap a {
-  color: #fff;
+  color: white;
   border-bottom: 1px solid #ccc;
 }
 
 #blogwrap h4, #headerwrap h4, #workwrap h4 {
-  color: #fff;
+  color: white;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 300;
@@ -320,9 +313,42 @@ a:hover .fa-circle {
   text-align: left;
 }
 
+.social {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+}
+.social.offset {
+  position: relative;
+  background: transparent;
+  border: 2px solid #000;
+  z-index: 1;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+}
+.social.offset:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: -2px;
+  top: 2px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  border-radius: 25px;
+}
+.social.linkedin::before, .social.facebook::before {
+  background: #4272b8;
+}
+
 /* TODO: should do something about repeating btn styles */
 .rmp-btn {
-  border: 1px solid #fff;
+  border: 1px solid white;
   width: auto;
   display: inline-block;
   padding: 15px 25px;
@@ -336,7 +362,7 @@ a:hover .fa-circle {
   z-index: 1;
   border-radius: 25px;
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   height: 61px;
   width: 343px;
   line-height: 61px;
@@ -358,20 +384,24 @@ a:hover .fa-circle {
 .rmp-btn-green a {
   text-align: center;
   position: relative;
-  color: #fff;
+  color: white;
 }
 
 header .rmp-btn-green {
-  height: auto;
-  width: auto;
+  height: 40px;
+  width: 150px;
   line-height: 10px;
   padding: 0;
   display: inline-block;
-  margin-top: 8px;
 }
 header .rmp-btn-green a {
   padding: 10px;
-  color: #fff !important;
+  color: white !important;
+}
+
+.accent-link {
+  font-weight: bold;
+  color: #339a65 !important;
 }
 
 /************************
@@ -397,7 +427,7 @@ header .rmp-btn-green a {
 }
 #call-to-action .call-left p,
 #call-to-action .call-right p {
-  color: #fff;
+  color: white;
 }
 #call-to-action .call-left {
   background: #694ea0;
@@ -407,20 +437,110 @@ header .rmp-btn-green a {
   padding-right: 0;
 }
 
+/********************
+* PRE-FOOTER SECTION
+********************/
+#pre-footer {
+  position: relative;
+  background: whitesmoke;
+  padding: 60px 0 50px 0;
+  font-size: 16px;
+  -webkit-box-shadow: 0 -2px 5px #282828;
+  box-shadow: 0 -2px 5px #282828;
+}
+#pre-footer ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 24px;
+}
+#pre-footer ul li {
+  line-height: 1.8;
+}
+#pre-footer ul li a {
+  color: #282828;
+  text-decoration: none;
+}
+#pre-footer h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+#pre-footer:before {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 90%;
+  content: '';
+  background: whitesmoke;
+  background-image: url(../img/coin.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/****************
+* FOOTER SECTION
+****************/
+footer {
+  background: #282828;
+  color: #9e9e9e;
+  text-align: center;
+  padding: 2px 0;
+}
+
 /* TODO: Sort out following page partials */
 .page-home #photowrap h2,
-.page-home #call-to-action h2 {
-  color: #fff;
+.page-home #call-to-action h2, .page-teachers #photowrap h2,
+.page-teachers #call-to-action h2, .page-parents #photowrap h2,
+.page-parents #call-to-action h2 {
+  color: white;
   font-style: italic;
   text-transform: none;
   font-weight: normal;
 }
-.page-home #call-to-action {
+.page-home #call-to-action, .page-teachers #call-to-action, .page-parents #call-to-action {
   background: #282828;
-  padding: 30px 0;
+  padding: 30px 0 100px 0;
 }
-.page-home #content-home {
-  background: #f5f5f5;
+.page-home #content-home, .page-teachers #content-home, .page-parents #content-home {
+  background: whitesmoke;
+  padding-top: 30px;
+}
+.page-home #content-home-2, .page-teachers #content-home-2, .page-parents #content-home-2 {
+  background: white;
+  padding-top: 30px;
+}
+.page-home #content-home-2 h2, .page-teachers #content-home-2 h2, .page-parents #content-home-2 h2 {
+  margin-bottom: 30px;
+}
+.page-home #content-home ul,
+.page-home #content-home-2 ul, .page-teachers #content-home ul,
+.page-teachers #content-home-2 ul, .page-parents #content-home ul,
+.page-parents #content-home-2 ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.page-home #content-home ul li,
+.page-home #content-home-2 ul li, .page-teachers #content-home ul li,
+.page-teachers #content-home-2 ul li, .page-parents #content-home ul li,
+.page-parents #content-home-2 ul li {
+  padding-left: 60px;
+  margin-top: 30px;
+  line-height: 30px;
+  background-image: url(../img/coin.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 30px 30px;
+  background-size: 30px 30px;
+  background-position: 10px;
+}
+
+.page-contact section.container {
+  padding-bottom: 100px;
 }
 
 .page-contact .contact-info img {
@@ -447,7 +567,7 @@ header .rmp-btn-green a {
 }
 
 .page-about #call-to-action h2 {
-  color: #fff;
+  color: white;
   text-transform: uppercase;
 }
 .page-about #call-to-action p {
@@ -455,7 +575,7 @@ header .rmp-btn-green a {
 }
 .page-about #call-to-action a {
   font-weight: 800;
-  color: #fff;
+  color: white;
   display: block;
 }
 .page-about #call-to-action a:nth-of-type(2) {
@@ -463,10 +583,148 @@ header .rmp-btn-green a {
   text-decoration: underline;
 }
 .page-about #content-team {
-  background: #f5f5f5;
+  background: whitesmoke;
 }
 .page-about #wrapper-team h2 {
-  margin-bottom: 70px;
+  margin-bottom: 130px;
+}
+.page-about .team-member {
+  background: whitesmoke;
+  padding: 100px 30px 40px 30px;
+  font-weight: 300;
+  height: 500px;
+}
+.page-about .team-member h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.page-about .team-member h4 {
+  font-weight: normal;
+}
+.page-about .team-member .social {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.page-about .team-member:before {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -60px;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  content: '';
+  background: whitesmoke;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  border-radius: 90%;
+  border: 10px solid whitesmoke;
+}
+.page-about .team-member.louise:before {
+  background-image: url(../img/contact/Louise-rounded.png);
+}
+.page-about .team-member.kenneth:before {
+  background-image: url(../img/contact/Kenneth-rounded.png);
+}
+.page-about .team-member.michael:before {
+  background-image: url(../img/contact/Michael-rounded.png);
+}
+
+.quote-card {
+  height: auto;
+  width: auto;
+  line-height: 30px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+.quote-card.offset {
+  position: relative;
+  background: transparent;
+  border: 2px solid #000;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+.quote-card.offset:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: #07449f;
+}
+.quote-card h4 {
+  text-transform: uppercase;
+  color: white;
+}
+.quote-card p {
+  margin: 0 0 25px 0;
+  font-size: 18px;
+  font-weight: 100;
+}
+.quote-card img {
+  width: 100px;
+  text-align: center;
+  margin: 40px auto;
+  border: 6px solid white;
+  border-radius: 90%;
+}
+
+.speech-bubble {
+  height: auto;
+  width: auto;
+  line-height: 1.5;
+  display: inline-block;
+  font-size: 18px;
+  font-style: italic;
+  padding: 30px;
+}
+.speech-bubble.offset {
+  position: relative;
+  background: transparent;
+  border: 2px solid #000;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+.speech-bubble.offset:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: #008036;
+}
+.speech-bubble.offset:after {
+  content: '';
+  position: absolute;
+  bottom: -62px;
+  left: 130px;
+  border-width: 60px 65px 0 0;
+  border-style: solid;
+  border-color: #008036 transparent;
+  display: block;
+  width: 0;
+  opacity: 0.7;
+}
+
+.page-parents .speech-bubble {
+  margin-top: 140px;
+}
+.page-parents .speech-bubble.offset:after {
+  border-width: 60px 0 0 60px;
 }
 
 /* eo page partials */

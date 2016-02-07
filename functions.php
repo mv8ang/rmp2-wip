@@ -24,6 +24,7 @@ function rmp2_theme_setup() {
     // specifies navigation sets
     register_nav_menu('primary', 'Primary header navigation');
     register_nav_menu('secondary', 'Footer navigation');
+    register_nav_menu('footer-nav-1', 'Extra footer navigation');
 }
 add_action('after_setup_theme', 'rmp2_theme_setup');
 
@@ -32,3 +33,20 @@ add_action('after_setup_theme', 'rmp2_theme_setup');
 // Theme support
 //add_theme_support('post-formats', array('aside', 'image', 'video'));
 
+
+
+// Footer function - uncomment and set up footer widgets in the WP admin panel in case of dynamic footers
+//function rmp2_widget_setup() {
+//    register_sidebar(array(
+//            'name'  => 'Footer',
+//            'id'    => 'footer-1',
+//            'class' => 'custom',
+//            'description' => 'Standard Footer',
+//            'before_widget' => '<aside id="%1s" class="widget %2s col-md-3">',
+//            'after_widget'  => '</aside>',
+//            'before_title'  => '<h3 class="widget-title">',
+//            'after_title'   => '</h3>',
+//        )
+//    );
+//}
+//add_action('widgets_init', 'rmp2_widget_setup');

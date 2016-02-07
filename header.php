@@ -29,7 +29,7 @@
                        </button>
 
                        <a class="navbar-brand pull-left" href="#">
-                           <img src="<?php echo get_template_directory_uri() . '/img/logo-white-2.png' ?>" title="Regn med Penge">
+                           <img src="<?php echo get_template_directory_uri() . '/img/logo-white.png' ?>" title="Regn med Penge">
                        </a>
                    </div>
 

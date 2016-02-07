@@ -7,6 +7,7 @@
 <div id="wrapper" class="clearfix page-home">
     <section id="headerwrap" class="allwrap">
         <div class="overlay">
+            <?php echo do_shortcode('[vidbg container=".overlay" mp4="#" webm="http://rmp.mladenangelov.net/wp-content/themes/rmp2/video/rmp_loop_2.mp4" poster="#" loop="true" overlay="true" muted="true"]'); ?>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -25,7 +26,7 @@
     <section id="content-home">
         <div class="container">
             <div class="row mt mb">
-                <div class="text left col-md-5">
+                <div class="text-justify col-md-5">
                     <h2>Hvad er Regn med penge?</h2>
                     <p>Regn med penge er et simpelt digitalt regneredskab, som kan styrke børns læring med 10-talssystemet samt deres talforståelse. Tallene visualiseres gennem penge så det bliver nemmere at forstå 10'ernes betydning, og hvordan tallene hænger sammen. Regn med penge er tiltænkt børn i 0-2.kl.</p>
                     <p>Regn med penge er resultatet af samarbejdet mellem en matematiklærer, der savnede et simpelt og fokuseret regneredskab, og to udviklere.</p>
@@ -68,5 +69,6 @@
 
 
 
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

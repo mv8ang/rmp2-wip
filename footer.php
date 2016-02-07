@@ -1,5 +1,5 @@
         <footer>
-            <?php wp_nav_menu(array('theme_location'=>'secondary')); ?>
+            <p>&copy; 2016 - Regn med Penge - All Rights Reserved</p>
         </footer>
 
     <?php wp_footer(); ?>

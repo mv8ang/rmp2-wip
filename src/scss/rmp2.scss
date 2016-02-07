@@ -1,3 +1,5 @@
+@import 'vars';
+
 a, img {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -8,23 +10,30 @@ a {
     color:#2a6496;
     &:hover, &:focus {
         text-decoration: none;
-        color:#428bca;
+        color:$blue;
     }
     
 }
 
 ::-moz-selection {
     background: #333;
-    color: #fff;
+    color: $white;
     text-shadow: none;
 }
 
 ::selection {
     background: #333;
-    color: #fff;
+    color: $white;
     text-shadow: none;
 }
 
+blockquote {
+    font-style: italic;
+    margin-left: 0;
+    border-left: none;
+    line-height: 1.4;
+    font-weight: normal;
+}
 /*
 * A better looking default horizontal rule
 */
@@ -60,7 +69,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: #282828;
+    color: $dark-grey;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -68,7 +77,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
-    color: #282828;
+    color: $dark-grey;
 }
 
 p {
@@ -77,18 +86,15 @@ p {
 
 #works h3 {
     margin-top: -43px;
-    color:#fff;
+    color:$white;
     text-transform: uppercase;
     font-size: 12px;
-    background: #282828;
+    background: $dark-grey;
     padding: 10px 20px;
     display: table;
 }
 
 
-.container .text.left {
-    text-align: justify;    
-}
 .container h2 {
     text-transform: uppercase;
     font-size: 28px;
@@ -123,7 +129,7 @@ Nav Bar and scrolling up effect
         border-bottom: 1px solid transparent
     }
     .navbar-custom .navbar-brand {
-        color: #fff;
+        color: $white;
         padding: 20px
     }
     .navbar-custom .navbar-brand:hover,
@@ -131,11 +137,11 @@ Nav Bar and scrolling up effect
         color: rgba(255, 255, 255, .8)
     }
     .navbar-custom .nav li:not(.rmp-btn-green) a {
-        color: #fff;
+        color: $white;
         padding: 20px
     }
     .navbar-custom.is-fixed .nav li a {
-        color: #fff;
+        color: $white;
         padding: 20px
     }
     .navbar-custom .nav .dropdown-menu li a {
@@ -173,14 +179,14 @@ Nav Bar and scrolling up effect
         transition: transform .3s
     }
     .navbar-custom.is-fixed .navbar-brand {
-        color: #282828
+        color: $dark-grey
     }
     .navbar-custom.is-fixed .navbar-brand:hover,
     .navbar-custom.is-fixed .navbar-brand:focus {
         color: #777
     }
     .navbar-custom.is-fixed .nav li a {
-        color: #282828
+        color: $dark-grey
     }
     .navbar-custom.is-fixed .nav li a:hover,
     .navbar-custom.is-fixed .nav li a:focus {
@@ -217,7 +223,7 @@ Nav Bar and scrolling up effect
 #social {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #fff;
+    background-color: $white;
 }
 
 a .fa-stack { color:#999; }
@@ -226,19 +232,7 @@ a .fa-circle {
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-a:hover .fa-circle  { color: #282828;}
-
-
-#footerwrap {
-    padding-top: 70px;
-    padding-bottom: 50px;
-    background-color: #eee;
-    font-weight: 900;
-}
-
-#footerwrap p {
-    margin-left: 10px;
-}
+a:hover .fa-circle  { color: $dark-grey;}
 
 .overlay {
     background: rgba(105, 78, 160, 0.9);
@@ -272,7 +266,7 @@ a:hover .fa-circle  { color: #282828;}
 
 #headerwrap {
     h1 {
-        color: #fff;
+        color: $white;
         padding: 0px;
         margin: 0;
         font-size: 70px;
@@ -283,7 +277,7 @@ a:hover .fa-circle  { color: #282828;}
     p {
         font-size: 26px;
         padding-top: 30px;
-        color: #fff;
+        color: $white;
     }
     
     .container {
@@ -307,13 +301,13 @@ a:hover .fa-circle  { color: #282828;}
     }
     
     a {
-        color:#fff; border-bottom: 1px solid #ccc;
+        color:$white; border-bottom: 1px solid #ccc;
     }
 }
 
 
 #blogwrap h4, #headerwrap h4, #workwrap h4 {
-    color: #fff;
+    color: $white;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 300;
@@ -325,13 +319,50 @@ a:hover .fa-circle  { color: #282828;}
 
 
 
+.social {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    
+    &.offset {
+        position: relative;
+        background: transparent;
+        border: 2px solid #000;
+        z-index: 1;
+        border-radius: 25px;
+        color: $white;
+        text-align: center;
+
+        &:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: -2px;
+            top: 2px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            border-radius: 25px;
+        }
+    }
+    
+    &.linkedin, &.facebook {
+        &::before {
+            background: $blue;
+        }
+    }
+}
 
 
 
 /* TODO: should do something about repeating btn styles */
 
 .rmp-btn {
-    border: 1px solid #fff;
+    border: 1px solid $white;
     width: auto;
     display: inline-block;
     padding: 15px 25px;
@@ -345,7 +376,7 @@ a:hover .fa-circle  { color: #282828;}
     z-index: 1;
     border-radius: 25px;
     text-transform: uppercase;
-    color: #fff;
+    color: $white;
     height: 61px;
     width: 343px;
     line-height: 61px;
@@ -361,31 +392,36 @@ a:hover .fa-circle  { color: #282828;}
         height: 100%;
         z-index: -1;
         opacity: 0.7;
-        background: #339a65;
+        background: $green;
         border-radius: 25px;
     }
     
     a {
         text-align: center;
         position: relative;
-        color: #fff;
+        color: $white;
     } 
 }
 
 
 
 header .rmp-btn-green {
-    height: auto;
-    width: auto;
+    height: 40px;
+    width: 150px;
     line-height: 10px;
     padding: 0;
     display: inline-block;
-    margin-top: 8px;
     
     a {
         padding: 10px;
-        color: #fff !important;
+        color: $white !important;
     }
+}
+
+
+.accent-link {
+    font-weight: bold;
+    color: $green !important;
 }
 
 
@@ -415,7 +451,7 @@ header .rmp-btn-green {
         height: 400px;
         
         p {
-            color: #fff;
+            color: $white;
         }
     }
     
@@ -424,9 +460,69 @@ header .rmp-btn-green {
     }
     
     .call-right {
-        background: #282828;
+        background: $dark-grey;
         padding-right: 0;
     }
+}
+
+
+/********************
+* PRE-FOOTER SECTION
+********************/
+#pre-footer {
+    position: relative;
+    background: $dark-white;
+    padding: 60px 0 50px 0;
+    font-size: 16px;
+    box-shadow: 0 -2px 5px $dark-grey;
+    
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+        margin-top: 24px;
+        
+        li {
+            line-height: 1.8;
+            
+            a {
+                color: $dark-grey;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    &:before {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 90%;
+        content: '';
+        background: $dark-white;
+        background-image: url(../img/coin.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+
+
+/****************
+* FOOTER SECTION
+****************/
+footer {
+    background: $dark-grey;
+    color: $grey;
+    text-align: center;
+    padding: 2px 0;
 }
 
 
@@ -434,31 +530,63 @@ header .rmp-btn-green {
 
 
 /* TODO: Sort out following page partials */
-.page-home {
+.page-home, .page-teachers, .page-parents {
     #photowrap h2,
     #call-to-action h2 {
-        color: #fff;
+        color: $white;
         font-style: italic;
         text-transform: none;
         font-weight: normal;
     }
     
     #call-to-action {
-        background: #282828;
-        padding: 30px 0;
+        background: $dark-grey;
+        padding: 30px 0 100px 0;
     
     }
     
     #content-home {
-        background: #f5f5f5;
+        background: $dark-white;
+        padding-top: 30px;
+    }
+    
+    #content-home-2 {
+        background: $white;
+        padding-top: 30px;
+        
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+    
+    #content-home,
+    #content-home-2 {
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+            list-style-type: none;
+            
+            li {
+                padding-left: 60px;
+                margin-top: 30px;
+                line-height: 30px;
+                background-image: url(../img/coin.png);
+                background-repeat: no-repeat;
+                background-size: 30px 30px;
+                background-position: 10px;
+            }
+        }
     }
 }
 
 
 
 
-
-
+.page-contact {
+    section.container {
+        padding-bottom: 100px;
+    }
+}
 .page-contact .contact-info {
     img {
         border-radius: 90px;
@@ -478,7 +606,7 @@ header .rmp-btn-green {
     
     .contact-email {
         font-weight: bold;
-        color: #339a65;
+        color: $green;
     }
     
     .contact-phone {
@@ -495,7 +623,7 @@ header .rmp-btn-green {
 .page-about {
     #call-to-action {
         h2 {
-            color: #fff;
+            color: $white;
             text-transform: uppercase;
         }
         
@@ -505,7 +633,7 @@ header .rmp-btn-green {
         
         a {
             font-weight: 800;
-            color: #fff;
+            color: $white;
             display: block;
             
             &:nth-of-type(2) {
@@ -516,16 +644,169 @@ header .rmp-btn-green {
     }
     
     #content-team {
-        background: #f5f5f5;
+        background: $dark-white;
     }
     
     #wrapper-team {
         h2 {
-            margin-bottom: 70px;
+            margin-bottom: 130px;
+        }
+    }
+    
+    .team-member {
+        background: $dark-white;
+        padding: 100px 30px 40px 30px;
+        font-weight: 300;
+        height: 500px;
+        
+        h3 {
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+        
+        h4 {
+            font-weight: normal;
+        }
+        
+        .social {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        
+        &:before {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: -60px;
+            transform: translate(-50%, 0);
+            content: '';
+            background: $dark-white;
+//            background-image: url(../img/contact/Kenneth-rounded.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            border-radius: 90%;
+            border: 10px solid $dark-white;
+        }
+        
+        &.louise:before {
+            background-image: url(../img/contact/Louise-rounded.png);
+        }
+        &.kenneth:before {
+            background-image: url(../img/contact/Kenneth-rounded.png);
+        }
+        &.michael:before {
+            background-image: url(../img/contact/Michael-rounded.png);
+        }        
+    }
+}
+
+
+
+
+.quote-card {
+    height: auto;
+    width: auto;
+    line-height: 30px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 40px;
+
+    &.offset {
+        position: relative;
+        background: transparent;
+        border: 2px solid #000;
+        z-index: 1;
+        color: $white;
+        text-align: center;
+
+        &:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: $blue-transparent;
+        }
+    }
+
+    h4 {
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    p {
+        margin: 0 0 25px 0;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    img {
+        width: 100px;
+        text-align: center;
+        margin: 40px auto;
+        border: 6px solid $white;
+        border-radius: 90%;
+    }
+}
+
+.speech-bubble {
+    height: auto;
+    width: auto;
+    line-height: 1.5;
+    display: inline-block;
+    font-size: 18px;
+    font-style: italic;
+    padding: 30px;
+
+    &.offset {
+        position: relative;
+        background: transparent;
+        border: 2px solid #000;
+        z-index: 1;
+        color: $white;
+        text-align: center;
+
+        &:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: $green-transparent;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -62px;
+            left: 130px;
+            border-width: 60px 65px 0 0;
+            border-style: solid;
+            border-color: $green-transparent transparent;
+            display: block;
+            width: 0;
+            opacity: 0.7;
         }
     }
 }
 
+.page-parents .speech-bubble {
+     margin-top: 140px;
+    
+    &.offset:after {
+        border-width: 60px 0 0 60px;
+    }
+}
 /* eo page partials */
     
 

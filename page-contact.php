@@ -32,7 +32,7 @@
         
         <div class="row mt contact-info">
                 <div class="col-xs-12 col-sm-2 col-sm-offset-4" style="text-align: center;">
-                    <img src=<?php echo get_template_directory_uri() . '/img/contact/Michael.png'; ?> alt="">
+                    <img src=<?php echo get_template_directory_uri() . '/img/contact/Michael-rounded.png'; ?> alt="">
                 </div>
             <div class="col-xs-12 col-sm-4" style="transform: translate(-40px,0)">
                     <h4>Michael Barkholt</h4>
@@ -42,5 +42,7 @@
             </div>
         </div>
     </section>
+
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
