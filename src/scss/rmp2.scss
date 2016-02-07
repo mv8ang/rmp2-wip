@@ -47,6 +47,7 @@ hr {
     padding: 0;
 }
 
+// TODO: merge .centered and .text-center
 .centered {
     text-align: center
 }
@@ -301,7 +302,7 @@ a:hover .fa-circle  { color: $dark-grey;}
     }
     
     a {
-        color:$white; border-bottom: 1px solid #ccc;
+        color:$white;
     }
 }
 
@@ -392,7 +393,7 @@ a:hover .fa-circle  { color: $dark-grey;}
         height: 100%;
         z-index: -1;
         opacity: 0.7;
-        background: $green;
+        background: $green-transparent;
         border-radius: 25px;
     }
     
@@ -415,17 +416,29 @@ header .rmp-btn-green {
     a {
         padding: 10px;
         color: $white !important;
+        text-decoration: none;
     }
 }
 
+#headerwrap .rmp-btn-green {
+    top: 50px;
+    padding: 19px 52px;
+    border-radius: 45px;
+    
+    a {
+        font-weight: bold;
+        font-size: 26px;
+    }
+    
+    &:before {
+        border-radius: 45px;
+    }
+}
 
 .accent-link {
     font-weight: bold;
     color: $green !important;
 }
-
-
-
 
 /************************
 * HOMEPAGE
@@ -462,6 +475,41 @@ header .rmp-btn-green {
     .call-right {
         background: $dark-grey;
         padding-right: 0;
+    }
+}
+
+
+
+
+
+/***********************
+* COMPATIBILITY SECTION
+***********************/
+#compatibility {
+    padding-bottom: 100px;
+    
+    h2 {
+        color: $purple;
+    }
+    
+    p {
+        font-style: italic;
+    }
+    
+    
+    .devices {
+        border-right: 3px dashed $purple;
+        
+        span {
+            color: $grey;
+            padding-left: 15px;
+        }
+    }
+    
+    .browsers {
+        img {
+            width: 50px;
+        }
     }
 }
 
@@ -579,7 +627,16 @@ footer {
     }
 }
 
-
+.page-home {
+    #headerwrap {
+        img {
+            display: block;
+            top: 100px;
+            position: relative;
+            margin: 0 auto;
+        }
+    }
+}
 
 
 .page-contact {
@@ -807,7 +864,54 @@ footer {
         border-width: 60px 0 0 60px;
     }
 }
+
+
+
+
+.page-try {
+    #wrapper-team {
+        h2 {
+            margin-bottom: 25px;
+        }
+        
+        .instruction {
+            background: $dark-white;
+            height: 420px;
+            font-size: 16px;
+            padding: 35px;
+            
+            &.ipad {
+                color: $white;
+                background: url(../img/instructions/photo-tip.jpg);
+                background-size: contain;
+                
+                p {
+                    font-style: italic;
+                }
+                
+                h3 {
+                    text-transform: uppercase;
+                    color: $white;
+                    margin-bottom: 30px;
+                }
+            }
+            
+            span::first-letter {
+                color: red;
+            }
+            
+            img {
+                margin-bottom: 25px;
+                width: 150px;
+            }
+            
+        }
+    }
+}
+
+
 /* eo page partials */
     
 
 @import 'plug-ins/wcp_style';
+

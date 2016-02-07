@@ -15,8 +15,12 @@
                     </div>
                 </div><!-- /row -->   
                 <div class="row">
-                    <div class="col-lg-12">
-                        <p class="text-center">Regn med penge er et digitalt regneredskab, som styrker læringen med 10-talssystemet.</p>
+                    <div class="col-lg-12 text-center">
+                        <p>Regn med penge er et digitalt regneredskab, som styrker læringen med 10-talssystemet.</p>
+                        <span class="rmp-btn-green">
+                            <a href="#" class="">Prøv free appen</a>
+                        </span>
+                        <img src="<?php echo get_template_directory_uri() . '/img/btn-play.png'; ?>" alt="Play video">
                     </div>
                 </div><!-- /row -->
             </div> <!-- /container -->

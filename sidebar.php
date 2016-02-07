@@ -10,8 +10,8 @@
         <aside class="col-md-2">
             <h3 class="widget-title">Regn Med Penge</h3>
             <ul>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">About Us</a></li>
-                <li><a href="<?php echo get_site_url() . '/contact'; ?>">Contact</a></li>
+                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Om os</a></li>
+                <li><a href="<?php echo get_site_url() . '/contact'; ?>">Kontakt</a></li>
                 <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Press</a></li>
             </ul>
         </aside>
@@ -21,10 +21,10 @@
         <aside class="col-md-2">
             <h3 class="widget-title">The App</h3>
             <ul>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Try the App</a></li>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">For Teachers</a></li>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">For Parents</a></li>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Materials</a></li>
+                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Prøv Appen</a></li>
+                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Til Undervisere</a></li>
+                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Til Forældre</a></li>
+                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Historier</a></li>
             </ul>
         </aside>
         <aside class="col-md-1">
