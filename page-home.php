@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <p>Regn med penge er et digitalt regneredskab, som styrker læringen med 10-talssystemet.</p>
-                        <span class="rmp-btn-green">
+                        <span class="rmp-btn green mt">
                             <a href="#" class="">Prøv free appen</a>
                         </span>
                         <img src="<?php echo get_template_directory_uri() . '/img/btn-play.png'; ?>" alt="Play video">
@@ -53,7 +53,8 @@
     
     <section id="testimonials" class="pattern">
         <div class="container">
-            <div class="row">
+            <div class="row centered">
+                <h2>What others say</h2>
                 <?php echo do_shortcode('[wcp_testimonial category="Testimonials"]'); ?>
             </div>
         </div>
@@ -63,7 +64,7 @@
         <div class="container">
             <div class="row text-center">
                 <h2 class="mb">The next step in math education. Try it now - it's <strong>free</strong> forever!</h2>
-                <span class="rmp-btn-green">
+                <span class="rmp-btn green">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>
             </div>

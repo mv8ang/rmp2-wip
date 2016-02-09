@@ -12,7 +12,7 @@
             <ul>
                 <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Om os</a></li>
                 <li><a href="<?php echo get_site_url() . '/contact'; ?>">Kontakt</a></li>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Press</a></li>
+                <li><a href="<?php echo get_site_url() . '/press'; ?>">Press</a></li>
             </ul>
         </aside>
         <aside class="col-md-1">
@@ -22,9 +22,9 @@
             <h3 class="widget-title">The App</h3>
             <ul>
                 <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Prøv Appen</a></li>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Til Undervisere</a></li>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Til Forældre</a></li>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Historier</a></li>
+                <li><a href="<?php echo get_site_url() . '/til-undervisere/'; ?>">Til Undervisere</a></li>
+                <li><a href="<?php echo get_site_url() . '/til-foraeldre/'; ?>">Til Forældre</a></li>
+                <li><a href="<?php echo get_site_url() . '/historier/'; ?>">Historier</a></li>
             </ul>
         </aside>
         <aside class="col-md-1">

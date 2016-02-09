@@ -20,7 +20,7 @@ a {
 }
 
 ::selection {
-    background: #333;
+    background-color: rgba(51, 154, 101, .7);
     color: $white;
     text-shadow: none;
 }
@@ -149,7 +149,7 @@ Nav Bar and scrolling up effect
     }
     .navbar-custom .nav li a:hover,
     .navbar-custom .nav li a:focus {
-        color: #ccc
+        color: $green;
     }
 }
 
@@ -234,7 +234,7 @@ a .fa-circle {
 a:hover .fa-circle  { color: $dark-grey;}
 
 .overlay {
-    background: rgba(105, 78, 160, 0.9);
+    background: rgba(80, 57, 127, 1);
     padding: 150px 0;
 }
 
@@ -274,9 +274,10 @@ a:hover .fa-circle  { color: $dark-grey;}
     }
     
     p {
-        font-size: 26px;
+        font-size: 24px;
         padding-top: 30px;
         color: $white;
+        font-weight: 300;
     }
     
     .container {
@@ -361,46 +362,89 @@ a:hover .fa-circle  { color: $dark-grey;}
 /* TODO: should do something about repeating btn styles */
 
 .rmp-btn {
-    border: 1px solid $white;
     width: auto;
     display: inline-block;
-    padding: 15px 25px;
     border-radius: 45px;
-}
-
-.rmp-btn-green {
     position: relative;
     background: transparent;
-    border: 2px solid #000;
     z-index: 1;
     border-radius: 25px;
     text-transform: uppercase;
     color: $white;
-    height: 61px;
-    width: 343px;
-    line-height: 61px;
-    padding: 15px 25px;
-
-    &:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: -4px;
-        top: 4px;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        opacity: 0.7;
-        background: $green-transparent;
-        border-radius: 25px;
-    }
+    background: transparent;
     
     a {
         text-align: center;
         position: relative;
         color: $white;
+        width: 100%;
+        height: auto;
+        padding: 15px 25px;
+        display: inline-block;
     } 
+    
+    &:before {
+        content: ' ';
+        border: 2px solid #000;
+        display: block;
+        position: absolute;
+        left: 3px;
+        top: -4px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        background: transparent;
+        border-radius: 25px;
+    }
+    
+    &.green {
+        background: $green;
+    }
+    
+    &:hover {
+        background: $dark-green;
+    }
 }
+
+//.rmp-btn-green {
+//    position: relative;
+//    background: transparent;
+//    z-index: 1;
+//    border-radius: 25px;
+//    text-transform: uppercase;
+//    padding: 15px;
+//    color: $white;
+//    height: 61px;
+//    width: 343px;
+//    line-height: 61px;
+//    background: $green;
+//
+//    a {
+//        text-align: center;
+//        position: relative;
+//        color: $white;
+//        padding: 15px 25px;
+//        width: 100%;
+//        height: auto;
+//    } 
+//    
+//    &:before {
+//        content: ' ';
+//        border: 2px solid #000;
+//        display: block;
+//        position: absolute;
+//        left: 3px;
+//        top: -4px;
+//        width: 100%;
+//        height: 100%;
+//        opacity: 0.7;
+//        background: transparent;
+//        border-radius: 25px;
+//    }
+//    
+//
+//    
+//}
 
 
 
@@ -420,12 +464,12 @@ header .rmp-btn-green {
 
 #headerwrap .rmp-btn-green {
     top: 50px;
-    padding: 19px 52px;
+    padding: 19px 22px;
     border-radius: 45px;
     
     a {
-        font-weight: bold;
-        font-size: 26px;
+        font-weight: 400;
+        font-size: 24px;
     }
     
     &:before {
@@ -434,7 +478,7 @@ header .rmp-btn-green {
 }
 
 .accent-link {
-    font-weight: bold;
+    font-weight: 400;
     color: $green !important;
 }
 
@@ -454,10 +498,6 @@ header .rmp-btn-green {
 }
 
 #call-to-action {
-    a {
-        display: inline-block;
-    }
-    
     .call-left,
     .call-right {
         height: 400px;
@@ -474,6 +514,10 @@ header .rmp-btn-green {
     .call-right {
         background: $dark-grey;
         padding-right: 0;
+    }
+    
+    .call-content {
+        padding: 0 50px;
     }
 }
 
@@ -521,7 +565,6 @@ header .rmp-btn-green {
     background: $dark-white;
     padding: 60px 0 50px 0;
     font-size: 16px;
-    box-shadow: 0 -2px 5px $dark-grey;
 
     
     ul {
@@ -551,6 +594,7 @@ header .rmp-btn-green {
         position: absolute;
         top: 0;
         left: 50%;
+        z-index:300;
         transform: translate(-50%, -50%);
         border-radius: 90%;
         content: '';
@@ -558,17 +602,14 @@ header .rmp-btn-green {
         background-image: url(../img/coin.png);
         background-repeat: no-repeat;
         background-position: center center;
+        transition: all .3s cubic-bezier(1, 2.57, 0.46, 0.1);
     }
 
     &:hover:before {
 //        transform: translate(-50%, -50%) rotate(45deg);
-        -webkit-animation-name: bounce;
         animation-name: bounce;
-        -webkit-transform-origin: center bottom;
-        transform-origin: center bottom;
-        -webkit-animation-duration: 1s;
+        transform-origin: center center;
         animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
     }
 }
@@ -583,40 +624,96 @@ footer {
     color: $grey;
     text-align: center;
     padding: 2px 0;
+    font-size: 16px;
+    
+    p {
+        margin: 20px 0;
+    }
 }
 
 
 
+.press-release {
+    background-color: $white;
+    background-position: 98% center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+    &.pdf {
+        background-image: url(../img/icon-pdf.png);
+    }
+    &.web {
+        background-image: url(../img/icon-web.png);
+    }
+    
+    &:hover {
+        background-color: $grey-highlight;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    .title {
+        font-weight: bold;
+    }
+    .posted-on,
+    .posted-by {
+        color: $grey;
+    }
+}
 
+.release-meta {
+    margin-top: 10px;
+    
+    .posted-on {
+        text-transform: uppercase;
+    }
+}
+
+#call-to-action {
+    background: $dark-grey;
+    padding: 30px 0 100px 0;
+    color: $white;
+    
+    .container {
+         h2 {
+            color: $white;
+            font-style: italic;
+            text-transform: none;
+            font-weight: normal;
+        }
+    }
+}
+
+#content-home-2 {
+    background: $white;
+    padding-top: 30px;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+}
 
 /* TODO: Sort out following page partials */
-.page-home, .page-teachers, .page-parents, .page-stories {
-    #photowrap h2,
-    #call-to-action h2 {
+.page-home, .page-teachers, .page-parents, .page-stories, .page-press {
+    #content-home {
+        background: $dark-white;
+        padding-top: 30px;
+        
+        a {
+            color: $dark-grey;
+        }
+    }
+}
+
+.page-home, .page-teachers, .page-parents {
+    #photowrap h2 {
         color: $white;
         font-style: italic;
         text-transform: none;
         font-weight: normal;
-    }
-    
-    #call-to-action {
-        background: $dark-grey;
-        padding: 30px 0 100px 0;
-    
-    }
-    
-    #content-home {
-        background: $dark-white;
-        padding-top: 30px;
-    }
-    
-    #content-home-2 {
-        background: $white;
-        padding-top: 30px;
-        
-        h2 {
-            margin-bottom: 30px;
-        }
     }
     
     #content-home,
@@ -691,9 +788,11 @@ footer {
 
 .page-about {
     #call-to-action {
+        padding: 0;
+        
         h2 {
-            color: $white;
             text-transform: uppercase;
+            color: $white;
         }
         
         p {
@@ -701,7 +800,7 @@ footer {
         }
         
         a {
-            font-weight: 800;
+            font-weight: 600;
             color: $white;
             display: block;
             
@@ -731,6 +830,7 @@ footer {
         h3 {
             font-size: 22px;
             text-transform: uppercase;
+            font-weight: 700;
         }
         
         h4 {
@@ -781,6 +881,7 @@ footer {
     font-weight: bold;
     font-size: 14px;
     padding-bottom: 40px;
+    width: 100%;
 
     &.offset {
         position: relative;
@@ -804,7 +905,14 @@ footer {
         }
     }
 
-    h4 {
+    a {
+        text-align: center;
+        color: $white;
+        text-decoration: none;
+        display: block;
+    }
+    
+    h3, h4 {
         text-transform: uppercase;
         color: $white;
     }
@@ -1077,6 +1185,7 @@ footer {
     #headerwrap {
         h1, h2, p {
             color: $dark-grey;
+            text-transform: none;
         }
         p {
             font-style: italic;
@@ -1096,6 +1205,9 @@ footer {
         }
         .overlay {
             background-color: transparent;
+        }
+        .container {
+            margin-top: 0;
         }
         
     }
@@ -1119,7 +1231,6 @@ footer {
     padding: 210px 0 30px 0;
     
     a {
-        border: 2px solid $dark-grey;
         border-radius: 90px;
         padding: 28px;
         font-size: 22px;
@@ -1133,27 +1244,27 @@ footer {
         z-index: 5;
         
     }
-    
+
     &.right a:after,
     &.left a:after {
+        border: 2px solid $dark-grey;
+        background: transparent;
         content: 'ENTER';
         height: 100%;
         width: 100%;
         position: absolute;
-        top: 2px;
-        right: 2px;
+        top: -3px;
+        right: -3px;
         padding-top: 10px;
         border-radius: 90px;
         z-index: 2;
     }
     
-    &.left a:after {
-        background: $purple;
-        opacity: 0.7;
-    }
-    &.right a:after {
+    &.left a {
         background: $green;
-        opacity: 0.7;
+    }
+    &.right a {
+        background: $purple;
     }
     
     &:before {
@@ -1176,14 +1287,14 @@ footer {
         background-image: url(../img/intro-teacher.png);
     }
     
-    &.right:hover {
+    &.left:hover {
         background-color: $green;
 
         & a:after {
             background-color: $dark-green;
         }
     }
-    &.left:hover {
+    &.right:hover {
         background-color: $purple;
         
         & a:after {
@@ -1192,8 +1303,42 @@ footer {
     }
 }
 
-/* eo page partials */
 
+
+
+.page-press {
+    .quote-card {
+        padding: 40px;
+    }
+    
+    #content-home-2 {
+        img {
+            width: 100%;
+            padding: 55px;
+            background: $dark-white;
+        }
+        
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        
+        & .asset-logo-white {
+            img {
+                background: $dark-grey;
+            }
+        }
+    }
+    
+    #content-home {
+        h2 {
+            margin-bottom: 30px;
+            
+        }
+    }
+}
+/* eo page partials */
+    
 
 @import 'plug-ins/wcp_style';
 
@@ -1206,15 +1351,15 @@ footer {
 
     40%, 43% {
         animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-        transform: translate(-50%,-50%) translate3d(0, -30px, 0);
+        transform: translate(-50%,-50%) translate3d(0, -40px, 0) rotateZ(60deg);
     }
 
     70% {
         animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-        transform: translate(-50%,-50%) translate3d(0, -15px, 0);
+        transform: translate(-50%,-50%) translate3d(0, -25px, 0) rotateZ(55deg);
     }
 
     90% {
-        transform: translate(-50%,-50%) translate3d(0,-4px,0);
+        transform: translate(-50%,-50%) translate3d(0,-14px,0) rotateZ(45deg);
     }
 }

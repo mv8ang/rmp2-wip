@@ -85,7 +85,7 @@
         <div class="row">
             <div class="col-md-6 call-left">
                 <div class="row mb mt">
-                    <div class="col-md-7 pull-right text-center">
+                    <div class="col-md-7 pull-right call-content text-center">
                         <h2>Contact us</h2>
                         <p>If you have anything you want to tell us, please write to, or call Michael Barkholt</p>
                         <a href="mailto:michael@corteza.dk" class="email" target="_blank">michael@corteza.dk</a>
@@ -96,12 +96,12 @@
             
             <div class="col-md-6 call-right">
                 <div class="row mb mt">
-                    <div class="col-md-7 pull-left text-center">
+                    <div class="col-md-7 pull-left call-content text-center">
                         <h2>Press</h2>
                         <p>Read the press mentions and see design assets</p>
                         
                         <span class="rmp-btn">
-                            <a href="#">Visit the press page</a>
+                            <a href="/press/">Visit the press page</a>
                         </span>
                     </div>
                 </div>

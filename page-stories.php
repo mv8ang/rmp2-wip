@@ -87,7 +87,7 @@
         <div class="container">
             <div class="row text-center">
                 <h2 class="mb">The next step in math education. Try it now - it's <strong>free</strong> forever!</h2>
-                <span class="rmp-btn-green">
+                <span class="rmp-btn green">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>
             </div>
