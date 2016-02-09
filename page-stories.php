@@ -10,51 +10,76 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-center">Til undervisere</h1>
+                        <h1 class="text-center">Regnehistorier</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="text-center">Det visuelle digitale regneredskab Regn med penge kan bruges, når eleverne skal udvikle en basal talforståelse og som illustration i forbindelse med regning. Regn emd penge holder det simpelt ved kun at have fokus på 10'erne.</p>
+                        <p class="text-center">Her på siden finder I regnehistorier - små historier med regnestykker.</p>
                     </div>
                 </div>
             </div> <!-- /container -->
         </div>
     </section><!-- /headerwrap -->
 
-    <section id="content-home">
+    <section id="content-stories">
         <div class="container">
             <div class="row mt mb">
-                <div class="text-left col-md-7">
-                    <h2>Teach your kids in an engaging way</h2>
-                    <ul>
-                        <li>Regn med penge er støtter <strong>forståelsen af 10-talssystemet</strong>. Her visualiseres 10'erne nemlig gennem 1 kroner, 10'ere, hundredkronesedler og tusindkronesedler. Barnet kan altså se, hvordan tallene hænger sammen, fordi enhederne kan omveksles både den ene og den anden vej.</li>
-                        <li>Forståelsen af regning styrkes også <strong>visuelt</strong> ved, at man kan lægge grupper af enheden sammen til en bunke og trækker enheder ud derfra. Regn med penge er altså et godt og simpelt redskab til at skabe talforståelse med fokus på 10'erne.</li>
-                        <li>Regn med penge fungerer i <strong>browseren</strong> på både <strong>computer og tablet</strong>. I kan dergor sagtens sidde og øve med Regn med penge derhjemme. I kan lave med simpel tælling og visningen af, hvordan tallene hænger sammen. I kan også kaster jer ud i regnestykker.</li>
-                    </ul>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-4 text-center">
-                    <div class="speech-bubble offset mt">
-                        <p>Unsure how to use Regn med Penge?</p>
-                    </div>
+                <div class="text-left col-md-12 text-center">
+                    <h2>Choose your stories</h2>
+                    <p>Regnehistorierne gør det lidt hyggeligere at øve regning. På den måde er det nemlig ikke bare regnestykke efter regnestykke og kun tal. Måske får I også inspiration og lyst til at lave jeres egne historier.</p>
+                    <p>Med regnehistorierne i hånden kan I også hurtigt komme i gang med at bruge Regn med penge. Regnehistorierne er opdelt efter klassetrin. De findes både som tekst og som lydfil.</p>
                 </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="row">
+                <!-- nav tabs -->
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#0klasse" aria-controls="home" role="tab" data-toggle="tab">0 klasse</a></li>
+                    <li role="presentation"><a href="#1klasse" aria-controls="profile" role="tab" data-toggle="tab">1 klasse</a></li>
+                    <li role="presentation"><a href="#2klasse" aria-controls="messages" role="tab" data-toggle="tab">2 klasse</a></li>
+                </ul>
 
-    <section id="content-home-2">
-        <div class="container">
-            <div class="row mt mb">
-                <div class="col-md-6">
-                    <img src="<?php echo get_template_directory_uri() . '/img/circle-photo.png' ?>" class="img-responsive">
-                </div>
-                <div class="text-left col-md-6">
-                    <h2>Use in practice</h2>
-                    <p>Til inspiration finder I nogle regnehistorier her på hjemmesiden, hvis I gerne vil gøre det lidt mere spændede end bare "Hvad er 12+9?". På den måde bliver regneøvelserne mere til en sjov leg, som I kan gå på opdagelse i sammen.</p>
-                    <p>Alternativt kan I også bruge eksempler fra jeres egen hverdag. I kan f.eks. beregne priser på dagligvarer, finde ud af hvor dyrt det er at lave fødelseskage eller tage på sommerferie. På den måde styrkes barnets forståelse for penge også.</p>
+                <!-- tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in container active" id="0klasse">
+                        <div class="row text-center mt">
+                            <div class="col-md-5 col-md-offset-1">
+                                <a href="" class="dl-all pdf">Download all 0.kl. stories in pdf</a> 
+                            </div>
+                            <div class="col-md-5">
+                                <a href="" class="dl-all audio">Download all 0.kl. stories in audio</a>
+                            </div>
+                        </div>
+                        <div class="row mb mt">
+                            <div class="col-md-4">
+                                <div class="story">
+                                    <h2 class="text-center">Morgenmad til undsætning</h2>
+                                    <p>Brum... rum... br... Karens mave rumler. Hun er godt sulten. Heldigvis går døren og hendes far kommer ind i køkkenet... med en indkøbspose.</p>
+                                    <p>"Hvad har du købt? Hvad har du købt?" spørger Karen begejstret. Hendes far giver sig til remse op, imens han viser tingene frem.</p>
+                                    <p>Appelsinjuice til 5 kr.
+                                    <br>Marmelade til 4 kr.
+                                    <br>Pålægschokolade til 10 kr.
+                                    <br>Rundstykker til 10 kr.
+                                    </p>
+                                    <p>Hvor meget har Carlas far købt ind for?</p>
+                                    <div class="text-center">
+                                        <a href="#" class="pdf">Download PDF</a>
+                                        <a href="#" class="audio">Download audio</a>
+                                        <a href="#" class="app">Afspil historie i app</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade container" id="1klasse">1 klasse</div>
+                    <div role="tabpanel" class="tab-pane fade container" id="2klasse">2 klasse</div>
                 </div>
             </div>
+            
         </div>
     </section>
 

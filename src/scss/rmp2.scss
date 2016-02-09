@@ -1,16 +1,14 @@
 @import 'vars';
 
-a, img {
+*, a, img {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 a {
-    color:#2a6496;
     &:hover, &:focus {
         text-decoration: none;
-        color:$blue;
     }
     
 }
@@ -443,6 +441,7 @@ header .rmp-btn-green {
 /************************
 * HOMEPAGE
 ************************/
+.page-home #headerwrap .overlay,
 .home #headerwrap .overlay {
     height: 100vh;
 }
@@ -523,6 +522,7 @@ header .rmp-btn-green {
     padding: 60px 0 50px 0;
     font-size: 16px;
     box-shadow: 0 -2px 5px $dark-grey;
+
     
     ul {
         padding-left: 0;
@@ -559,6 +559,18 @@ header .rmp-btn-green {
         background-repeat: no-repeat;
         background-position: center center;
     }
+
+    &:hover:before {
+//        transform: translate(-50%, -50%) rotate(45deg);
+        -webkit-animation-name: bounce;
+        animation-name: bounce;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
 }
 
 
@@ -578,7 +590,7 @@ footer {
 
 
 /* TODO: Sort out following page partials */
-.page-home, .page-teachers, .page-parents {
+.page-home, .page-teachers, .page-parents, .page-stories {
     #photowrap h2,
     #call-to-action h2 {
         color: $white;
@@ -896,10 +908,6 @@ footer {
                 }
             }
             
-            span::first-letter {
-                color: red;
-            }
-            
             img {
                 margin-bottom: 25px;
                 width: 150px;
@@ -910,8 +918,303 @@ footer {
 }
 
 
-/* eo page partials */
+
+
+.page-stories {
+    background: $dark-white;
+
     
+    .nav-pills {
+        
+        li {
+            background: $purple;
+            &.active a {
+                background: $purple;
+            }
+            
+            a {
+                color: $white;
+                padding: 15px;
+            }
+        }
+        
+        li:first-of-type {
+            border-radius: 90px 0 0 90px;
+            border-right: 2.5px solid $white;
+            
+            &.active a,
+            &>a:hover,
+            &>a:focus {
+                border-radius: 90px 0 0 90px;
+            }
+        }
+        li:nth-of-type(2) {
+            border-radius: 0 0 0 0;  
+            border-right: 2.5px solid $white;
+            border-left: 2.5px solid $white;
+            
+            &.active a,
+            &>a:hover,
+            &>a:focus {
+                border-radius: 0 0 0 0;            
+            }
+        }
+        li:last-of-type {
+            border-radius: 0 90px 90px 0;            
+            border-left: 2.5px solid $white;
+
+            &.active a,
+            &>a:hover,
+            &>a:focus {
+                border-radius: 0 90px 90px 0;            
+            }
+        }
+        
+    }
+    
+    .nav>li>a:hover,
+    .nav>li>a:active,
+    .nav>li>a:focus {
+        background: $dark-purple;
+    }
+    
+    .story {
+        background: $white;
+        padding: 35px;
+        margin-top: 35px;
+
+        &:hover {
+            background: $dark-white;
+        }
+        
+        h2 {
+            font-size: 20px;
+        }
+        
+        p {
+            font-style: italic;
+        }
+        
+        a {
+            color: $dark-grey;
+            background: $white;
+            background-image: url(../img/coin.png);
+            background-size: 13%;
+            background-position: 10px;
+            background-repeat: no-repeat;
+            display: block;
+            padding: 8px;
+            margin: 0 auto 15px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            border: 2px solid $dark-grey;
+            border-radius: 90px;
+            width: 80%;
+            
+            &.pdf {
+                background-image: url(../img/icon-pdf.png);
+            }
+            
+            &.audio {
+                background-image: url(../img/icon-audio.png);
+            }
+            
+            &.app {
+                margin-bottom: 0;
+                background-image: none;
+            }
+        }
+    }
+    
+    .dl-all {
+        color: $dark-grey;
+        background: $white transparent;
+        background-size: 35px;
+        background-position: 16px;
+        background-repeat: no-repeat;
+        display: block;
+        padding: 10px 10px 10px 80px;
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        text-transform: uppercase;
+        border: 2px solid $dark-grey;
+        border-radius: 90px;
+        width: 100%;
+        
+        &.pdf {
+            background-image: url(../img/icon-pdf.png);
+        }
+        
+        &.audio {
+            background-image: url(../img/icon-audio.png);
+        }
+    }
+}
+
+.dl-all,
+.story a {
+    &:hover {
+        background-color: $purple;
+        color: $white;
+        background-size:20%;
+        background-position: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+.page-intro {
+    #headerwrap {
+        h1, h2, p {
+            color: $dark-grey;
+        }
+        p {
+            font-style: italic;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+        .intro-card:hover {
+            h2, p {
+                color: $white;
+            }
+
+        }
+        img {
+            top: auto;
+            width: 150px;
+            margin-bottom: 50px;
+        }
+        .overlay {
+            background-color: transparent;
+        }
+        
+    }
+    
+    &.page-home {
+        #headerwrap {
+            .overlay {
+                height: 90vh;
+                
+                @media (max-width: 992px) {
+                    height: 100%;
+                    padding-bottom: 100px;
+                }
+            }
+        }
+    }
+}
+
+.intro-card {
+    background: $dark-white;
+    padding: 210px 0 30px 0;
+    
+    a {
+        border: 2px solid $dark-grey;
+        border-radius: 90px;
+        padding: 28px;
+        font-size: 22px;
+        color: $white;
+        text-transform: uppercase;
+        display: block;
+        width: 33%;
+        margin: 10px auto 0 auto;
+        font-weight: bold;
+        position: relative;
+        z-index: 5;
+        
+    }
+    
+    &.right a:after,
+    &.left a:after {
+        content: 'ENTER';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        padding-top: 10px;
+        border-radius: 90px;
+        z-index: 2;
+    }
+    
+    &.left a:after {
+        background: $purple;
+        opacity: 0.7;
+    }
+    &.right a:after {
+        background: $green;
+        opacity: 0.7;
+    }
+    
+    &:before {
+        content: '';
+        width: 170px;
+        height: 170px;
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        transform: translate(-50%, 0);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    
+    &.left:before {
+        background-image: url(../img/intro-student.png);
+    }
+    &.right:before {
+        background-image: url(../img/intro-teacher.png);
+    }
+    
+    &.right:hover {
+        background-color: $green;
+
+        & a:after {
+            background-color: $dark-green;
+        }
+    }
+    &.left:hover {
+        background-color: $purple;
+        
+        & a:after {
+            background-color: $dark-purple;
+        }
+    }
+}
+
+/* eo page partials */
+
 
 @import 'plug-ins/wcp_style';
 
+
+@keyframes bounce {
+    from, 20%, 53%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate(-50%,-50%) translate3d(0,0,0);
+    }
+
+    40%, 43% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate(-50%,-50%) translate3d(0, -30px, 0);
+    }
+
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate(-50%,-50%) translate3d(0, -15px, 0);
+    }
+
+    90% {
+        transform: translate(-50%,-50%) translate3d(0,-4px,0);
+    }
+}
