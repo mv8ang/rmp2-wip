@@ -99,6 +99,21 @@ Nav Bar and scrolling up effect
   width: 100%;
   z-index: 3;
   letter-spacing: 2px;
+  padding: 40px !important;
+}
+
+a.navbar-brand {
+  background-image: url(../img/logo-white.png);
+  width: 80px;
+  height: 54px;
+}
+
+.is-fixed a.navbar-brand {
+  background-image: url(../img/logo-black.png);
+}
+
+.navbar-custom .navbar-collapse {
+  padding: 0 20px;
 }
 
 .navbar-custom .navbar-brand {
@@ -117,9 +132,22 @@ Nav Bar and scrolling up effect
     border-bottom: 1px solid transparent;
   }
 
+  .navbar-custom .navbar-collapse {
+    padding: 0;
+  }
+
   .navbar-custom .navbar-brand {
     color: white;
     padding: 20px;
+  }
+  .navbar-custom .navbar-brand img {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: white;
   }
 
   .navbar-custom .navbar-brand:hover,
@@ -127,7 +155,7 @@ Nav Bar and scrolling up effect
     color: rgba(255, 255, 255, 0.8);
   }
 
-  .navbar-custom .nav li:not(.rmp-btn-green) a {
+  .navbar-custom .nav li:not(.rmp-btn.green) a {
     color: white;
     padding: 20px;
   }
@@ -161,7 +189,7 @@ Nav Bar and scrolling up effect
 
   .navbar-custom.is-fixed {
     position: fixed;
-    top: -85px;
+    top: -141px;
     padding: 10px 0;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #f2f2f2;
@@ -382,37 +410,6 @@ a:hover .fa-circle {
 }
 .rmp-btn:hover {
   background: #25714a;
-}
-
-header .rmp-btn-green {
-  height: 40px;
-  width: 150px;
-  line-height: 10px;
-  padding: 0;
-  display: inline-block;
-}
-header .rmp-btn-green a {
-  padding: 10px;
-  color: white !important;
-  text-decoration: none;
-}
-
-#headerwrap .rmp-btn-green {
-  top: 50px;
-  padding: 19px 22px;
-  border-radius: 45px;
-}
-#headerwrap .rmp-btn-green a {
-  font-weight: 400;
-  font-size: 24px;
-}
-#headerwrap .rmp-btn-green:before {
-  border-radius: 45px;
-}
-
-.accent-link {
-  font-weight: 400;
-  color: #339a65 !important;
 }
 
 /************************

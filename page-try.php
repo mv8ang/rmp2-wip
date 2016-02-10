@@ -7,7 +7,7 @@
 <div id="wrapper" class="clearfix page-try">
     <section id="headerwrap" class="allwrap">
         <div class="overlay pattern-purple">
-            <div class="container">
+            <div class="container centered">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="text-center">Prøv Appen</h1>
@@ -17,6 +17,9 @@
                     <div class="col-lg-12">
                         <p class="text-center">Du kan prøve Regn med penge her i browseren.
                         <br>Det behøver altså ikke installere noget for at se, hvordan Regn med penge fungerer.</p>
+                        <div class="rmp-btn green mt">
+                            <a href="#">Start Regn med Penge</a>
+                        </div>
                     </div>
                 </div>
             </div> <!-- /container -->
@@ -130,4 +133,4 @@
 
 <?php get_sidebar(); ?>
 
-<?php get_footer(); ?>purple
+<?php get_footer(); ?>

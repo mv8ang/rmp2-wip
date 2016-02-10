@@ -21,19 +21,19 @@
            <div class="navbar navbar-default navbar-custom navbar-fixed-top">
                <div class="container">
                    <div class="navbar-header">
-                       <button class="navbar-toggle collapsed" data-toggle="collapse" type="button" data-target="#bs-example-navbr-collapse-1">
+                       
+                       <button class="navbar-toggle collapsed" data-toggle="collapse" type="button" data-target="#navcontent">
                            <span class="sr-only">Toggle navigation</span>
                            <span class="icon-bar"></span>
                            <span class="icon-bar"></span>
                            <span class="icon-bar"></span>
                        </button>
 
-                       <a class="navbar-brand pull-left" href="#">
-                           <img src="<?php echo get_template_directory_uri() . '/img/logo-white.png' ?>" title="Regn med Penge">
-                       </a>
+                       <a class="navbar-brand pull-left" href="#"></a>
                    </div>
 
-                   <div class="navbar-collapse collapse navbar-responsive-collapse" id="bs-example-navbar-collapse-1">
+                   <div class="navbar-collapse collapse navbar-responsive-collapse" id="navcontent">
+                       
                        <?php wp_nav_menu(array(
                                 'theme_location' => 'primary',
                                 'container' => false,
@@ -41,6 +41,7 @@
                                 )
                             );
                        ?>
+                       
                    </div>
                </div>
            </div>
