@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-center">Team</h1>
+                        <h1 class="text-center">Teamet</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row mt mb">
                 <div class="text-justify col-md-5">
-                    <h2>How it all happened</h2>
+                    <h2>Sådan startede det</h2>
                     <p>I undervisningen manglede Louise et visuelt regneredskab, der kunne hjælpe børnene med at løse regneopgaver og give dem et visuelt indblik i, hvordan tal hænger sammen. Louise fandt, at de eksisterende programmer ikke havde de funktioner, hun ønskede. Ofte kom de også til at forvirre eller friste børnene til at lave andre ting.</p>
 
                     <p>Hun henvendte sig derfor til Kenneth ved en konference og forhørte sig omkring muligheden for at udvikle et redskab specifikt målrettet undervisningssektoren. Kenneth tilkoblede efterfølgende Michael som programmør, og i fællesskab har de tre udviklet Regn med penge. 
@@ -46,7 +46,7 @@
                 <div class="col-md-4">
                     <div class="col-md-12 team-member louise">
                         <h3>Louise Fiskaali Gammelmark</h3>
-                        <h4>Math teacher & co-founder</h4>
+                        <h4>Matematiklærer</h4>
                         <div>
                             <a href="https://dk.linkedin.com/in/louise-fiskaali-64601560/en" class="social offset linkedin" target="_blank">in</a>
                         </div>
@@ -57,7 +57,7 @@
                 <div class="col-md-4">
                     <div class="col-md-12 team-member kenneth">
                         <h3>Kenneth Boris Jensen</h3>
-                        <h4>UX & Graphic designer</h4>
+                        <h4>UX'er og grafisk designer</h4>
                         <div>
                             <a href="https://dk.linkedin.com/in/kenneth-boris-jensen-553a7411" class="social offset linkedin" target="_blank">in</a>
                         </div>
@@ -67,7 +67,7 @@
                 <div class="col-md-4">
                     <div class="col-md-12 team-member michael">
                         <h3>Michael Barkholt</h3>
-                        <h4>Programmer, co-founder</h4>
+                        <h4>Programmør</h4>
                         <div>
                             <a href="https://dk.linkedin.com/in/barkholt" class="social offset linkedin" target="_blank">in</a>
                         </div>
@@ -86,8 +86,8 @@
             <div class="col-md-6 call-left">
                 <div class="row mb mt">
                     <div class="col-md-7 pull-right call-content text-center">
-                        <h2>Contact us</h2>
-                        <p>If you have anything you want to tell us, please write to, or call Michael Barkholt</p>
+                        <h2>Kontakt</h2>
+                        <p>Hvis du har ider, ris eller ros, er du velkommen til at kontakte Michael Barkholt.</p>
                         <a href="mailto:michael@corteza.dk" class="email" target="_blank">michael@corteza.dk</a>
                         <a href="tel:22362120" target="_blank">+45 22362120</a>
                     </div>
@@ -97,11 +97,11 @@
             <div class="col-md-6 call-right">
                 <div class="row mb mt">
                     <div class="col-md-7 pull-left call-content text-center">
-                        <h2>Press</h2>
-                        <p>Read the press mentions and see design assets</p>
+                        <h2>Presse</h2>
+                        <p>Regn med Penge bliver af og til anmeldt og nævn. Se presseomtaler og design materialer her.</p>
                         
                         <span class="rmp-btn light">
-                            <a href="/press/">Visit the press page</a>
+                            <a href="/press/">Se presseomtale her</a>
                         </span>
                     </div>
                 </div>

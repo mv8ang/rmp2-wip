@@ -10,12 +10,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-center">Press</h1>
+                        <h1 class="text-center">Presse</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="text-center">Her på siden finder du et arkiv, hvor du kan se, hvordan Regn med penge har været omtalt i diverse medier. Du kan også læse vores pressemeddelelser.</p>
+                        <p class="text-center">Herpå siden finder du et arkiv over presseomtale, som Regn med penge har fåetgennem tiden i diverse medier. Længere nede på siden kan du også findevores design materiale.</p>
                     </div>
                 </div>
             </div> <!-- /container -->
@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row mt">
                 <div class="col-md-12">
-                    <h2>Fordele ved Regn med penge</h2>
+                    <h2>Presseomtale</h2>
                 </div>
                 <div class="text-left col-md-7">
                     <!-- when adding a new class, include the pdf/web class -->
@@ -137,7 +137,7 @@
 
                     <div class="col-md-12 centered">
                         <div class="rmp-btn green slim mb">
-                            <a data-toggle="collapse" data-target="#demo">Load more</a>
+                            <a data-toggle="collapse" data-target="#demo">Læs mere</a>
                         </div>
                     </div>
 
@@ -158,8 +158,20 @@
         <div class="container">
             <div class="row mt mb">
                 <div class="col-md-12 text-left">
-                    <h2>Regn med Penge logo</h2>
+                    <h2>Design materialse - Regn med Penge</h2>
                 </div>
+                
+                <div class="col-md-12 text-left">
+                    <p>Her har du Regn med penges logo til frit download, hvis du har brug for det til kommerciel brug. </p>
+                    <p>Du kan altså frit hente det her.</p>
+                    <p>Du må IKKE uden forudhentet godkendelse hos <a href="mailto:michael@corteza.dk">Michael Barkholt (michael@corteza.dk)</a> bruge, redigere, modificere eller ændre i logoernes oprindelige version. Dette gælder fonts, opstilling af ordeneeller proportionsmæssigt.</p>
+                    <p>Er du i tvivl om korrekt brug af Regn med penges brug af logoet, er du velkommen til at kontakte Michael Barkholt.</p>
+                </div>
+
+                <div class="col-md-12 text-left">
+                    <h2>Logo</h2>
+                </div>
+                
                 <div class="col-md-3">
                     <img src="<?php echo get_template_directory_uri() . '/img/press-assets/logo-dark.png'; ?>" alt="">
                     <p>Download 
@@ -175,6 +187,7 @@
                     | 
                     <a href="<?php echo get_template_directory_uri() . '/img/press-assets/logo-white.eps'; ?>" target="_blank">Eps</a></p>
                 </div>
+                
             </div>
             
         </div>
@@ -183,7 +196,7 @@
     <section id="call-to-action">
         <div class="container">
             <div class="row text-center">
-                <h2 class="mb">The next step in math education. Try it now - it's <strong>free</strong> forever!</h2>
+                <h2 class="mb">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>

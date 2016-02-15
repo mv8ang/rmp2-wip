@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row mt mb">
                 <div class="text-left col-md-12 text-center">
-                    <h2>Choose your stories</h2>
+                    <h2>Vælg din historie her</h2>
                     <p>Regnehistorierne gør det lidt hyggeligere at øve regning. På den måde er det nemlig ikke bare regnestykke efter regnestykke og kun tal. Måske får I også inspiration og lyst til at lave jeres egne historier.</p>
                     <p>Med regnehistorierne i hånden kan I også hurtigt komme i gang med at bruge Regn med penge. Regnehistorierne er opdelt efter klassetrin. De findes både som tekst og som lydfil.</p>
                 </div>
@@ -47,10 +47,10 @@
                     <div role="tabpanel" class="tab-pane fade in container active" id="0klasse">
                         <div class="row text-center mt">
                             <div class="col-md-5 col-md-offset-1">
-                                <a href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Regnehistorier-til-0-klasse.pdf'; ?>" class="dl-all pdf">Download all 0.kl. stories in pdf</a> 
+                                <a href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Regnehistorier-til-0-klasse.pdf'; ?>" class="dl-all pdf">Hent alle historier til 0. klasse som pdf her</a> 
                             </div>
                             <div class="col-md-5">
-                                <a href="" class="dl-all audio">Download all 0.kl. stories in audio</a>
+                                <a href="" class="dl-all audio">Hent alle audiofiler til 0. klasses historier her</a>
                             </div>
                         </div>
                         <div class="row mb mt masonry-container">
@@ -96,10 +96,10 @@
                     <div role="tabpanel" class="tab-pane fade container" id="1klasse">
                         <div class="row text-center mt">
                             <div class="col-md-5 col-md-offset-1">
-                                <a href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Regnehistorier-til-1-klasse.pdf'; ?>" class="dl-all pdf">Download all 1.kl. stories in pdf</a> 
+                                <a href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Regnehistorier-til-1-klasse.pdf'; ?>" class="dl-all pdf">Hent alle historier til 1. klasse som pdf her</a> 
                             </div>
                             <div class="col-md-5">
-                                <a href="" class="dl-all audio">Download all 1.kl. stories in audio</a>
+                                <a href="" class="dl-all audio">Hent alle audiofiler til 1. klasses historier her</a>
                             </div>
                         </div>
                         <div class="row mb mt masonry-container">
@@ -164,10 +164,10 @@
                     <div role="tabpanel" class="tab-pane fade container" id="2klasse">
                         <div class="row text-center mt">
                             <div class="col-md-5 col-md-offset-1">
-                                <a href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Regnehistorier-til-2-klasse.pdf'; ?>" class="dl-all pdf">Download all 2.kl. stories in pdf</a> 
+                                <a href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Regnehistorier-til-2-klasse.pdf'; ?>" class="dl-all pdf">Hent alle historier til 0. klasse som pdf her</a> 
                             </div>
                             <div class="col-md-5">
-                                <a href="" class="dl-all audio">Download all 2.kl. stories in audio</a>
+                                <a href="" class="dl-all audio">Hent alle audiofiler til 2. klasses historier her</a>
                             </div>
                         </div>
                         <div class="row mb mt masonry-container">
@@ -315,7 +315,7 @@
     <section id="call-to-action">
         <div class="container">
             <div class="row text-center">
-                <h2 class="mb">The next step in math education. Try it now - it's <strong>free</strong> forever!</h2>
+                <h2 class="mb">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green swing">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>

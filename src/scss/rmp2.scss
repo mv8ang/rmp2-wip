@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     color: $dark-grey;
 }
 
+
 p {
     margin: 30px 0;
 }
@@ -296,6 +297,12 @@ a:hover .fa-circle  { color: $dark-grey;}
         font-size: 70px;
         font-weight: 400;
         font-family: 'Open Sans', sans-serif;
+        
+        &.header-secondary {
+            font-size: 60px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
     }
     
     p {
@@ -435,6 +442,14 @@ a:hover .fa-circle  { color: $dark-grey;}
         
         a {
             color: $dark-grey !important;
+        }
+        
+        &:hover {
+            background: $blue;
+            
+            a {
+                color: $white;
+            }
         }
     }
     
@@ -712,7 +727,12 @@ footer {
     #content-home {
         background: $dark-white;
         padding: 100px 0;
-        
+
+    }
+}
+
+.page-teachers, .page-parents, .page-stories, .page-press {
+    #content-home {
         a {
             color: $dark-grey;
         }
@@ -939,7 +959,7 @@ footer {
         padding: 160px 60px 40px 60px;
         
         &:after {
-            background-image: url(../img/contact/Kenneth-rounded.png);
+            background-image: url(../img/contact/Louise.png);
 
         }
     }
@@ -1362,7 +1382,7 @@ footer {
         color: $white;
         text-transform: uppercase;
         display: block;
-        width: 33%;
+        width: 50%;
         margin: 10px auto 0 auto;
         font-weight: bold;
         position: relative;
@@ -1374,7 +1394,6 @@ footer {
     &.left a:after {
         border: 2px solid $dark-grey;
         background: transparent;
-        content: 'ENTER';
         height: 100%;
         width: 100%;
         position: absolute;
@@ -1383,6 +1402,13 @@ footer {
         padding-top: 10px;
         border-radius: 90px;
         z-index: 2;
+    }
+    
+    &.right a:after {
+        content: 'Gå til hjemmesiden';
+    }
+    &.left a:after {
+        content: 'Start app';
     }
     
     &.left a {

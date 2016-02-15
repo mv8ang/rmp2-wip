@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, a, img {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -315,6 +316,11 @@ a:hover .fa-circle {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
+#headerwrap h1.header-secondary {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 #headerwrap p {
   font-size: 24px;
   padding-top: 30px;
@@ -433,6 +439,12 @@ a:hover .fa-circle {
 }
 .rmp-btn.white a {
   color: #282828 !important;
+}
+.rmp-btn.white:hover {
+  background: #4272b8;
+}
+.rmp-btn.white:hover a {
+  color: white;
 }
 .rmp-btn.slim a {
   padding: 8px 25px;
@@ -665,7 +677,8 @@ footer p {
   background: whitesmoke;
   padding: 100px 0;
 }
-.page-home #content-home a, .page-teachers #content-home a, .page-parents #content-home a, .page-stories #content-home a, .page-press #content-home a {
+
+.page-teachers #content-home a, .page-parents #content-home a, .page-stories #content-home a, .page-press #content-home a {
   color: #282828;
 }
 
@@ -845,7 +858,7 @@ footer p {
   padding: 160px 60px 40px 60px;
 }
 .quote-card.teachers:after {
-  background-image: url(../img/contact/Kenneth-rounded.png);
+  background-image: url(../img/contact/Louise.png);
 }
 .quote-card:after {
   content: '';
@@ -1178,7 +1191,7 @@ footer p {
   color: white;
   text-transform: uppercase;
   display: block;
-  width: 33%;
+  width: 50%;
   margin: 10px auto 0 auto;
   font-weight: bold;
   position: relative;
@@ -1187,7 +1200,6 @@ footer p {
 .intro-card.right a:after, .intro-card.left a:after {
   border: 2px solid #282828;
   background: transparent;
-  content: 'ENTER';
   height: 100%;
   width: 100%;
   position: absolute;
@@ -1196,6 +1208,12 @@ footer p {
   padding-top: 10px;
   border-radius: 90px;
   z-index: 2;
+}
+.intro-card.right a:after {
+  content: 'Gå til hjemmesiden';
+}
+.intro-card.left a:after {
+  content: 'Start app';
 }
 .intro-card.left a {
   background: #339a65;

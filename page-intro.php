@@ -32,7 +32,7 @@
                     </div>
                 <div class="row mb">
                     <div class="col-lg-12 text-center">
-                        <h2>Hello! Who are you?</h2>
+                        <h2>Hej, hvem er du?</h2>
                     </div>
                 </div>  
                 
@@ -40,14 +40,14 @@
                     <div class="col-md-6">
                        <div class="intro-card left">
                             <h2>Elev</h2>
-                            <p>Play the game</p>
+                            <p>Prøv regneapp</p>
                             <a href=""></a>
                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="intro-card right">
                             <h2>Lærer / Forældre</h2>
-                            <p>Visit the website</p>
+                            <p>Læs mere om Regn med Penge</p>
                             <a href="/home"></a>
                         </div>
                     </div>

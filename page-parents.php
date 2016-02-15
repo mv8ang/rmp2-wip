@@ -10,12 +10,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-center">Til undervisere</h1>
+                        <h1 class="text-center">Til forældre</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="text-center">Det visuelle digitale regneredskab Regn med penge kan bruges, når eleverne skal udvikle en basal talforståelse og som illustration i forbindelse med regning. Regn emd penge holder det simpelt ved kun at have fokus på 10'erne.</p>
+                        <p class="text-center">Har du lyst til at øve regning med dit barnpå en sjov måde?Så er appenengod mulighed. Regn med pengeer gratis og tilgængelig her på siden –ingen sign ups og logins. Sammen kan I snakke regning eller give jer i kast med vores regnehistorier–eller lave jeres egne.</p>
                     </div>
                 </div>
             </div> <!-- /container -->
@@ -26,19 +26,19 @@
         <div class="container">
             <div class="row mt mb">
                 <div class="text-left col-md-7">
-                    <h2>Teach your kids in an engaging way</h2>
+                    <h2>Gør regning sjov for dine børn</h2>
                     <ul>
-                        <li>Regn med penge er støtter <strong>forståelsen af 10-talssystemet</strong>. Her visualiseres 10'erne nemlig gennem 1 kroner, 10'ere, hundredkronesedler og tusindkronesedler. Barnet kan altså se, hvordan tallene hænger sammen, fordi enhederne kan omveksles både den ene og den anden vej.</li>
-                        <li>Forståelsen af regning styrkes også <strong>visuelt</strong> ved, at man kan lægge grupper af enheden sammen til en bunke og trækker enheder ud derfra. Regn med penge er altså et godt og simpelt redskab til at skabe talforståelse med fokus på 10'erne.</li>
-                        <li>Regn med penge fungerer i <strong>browseren</strong> på både <strong>computer og tablet</strong>. I kan dergor sagtens sidde og øve med Regn med penge derhjemme. I kan lave med simpel tælling og visningen af, hvordan tallene hænger sammen. I kan også kaster jer ud i regnestykker.</li>
+                        <li>Regn med penge hjælperdit barn med at <strong>forstå 10-talssystemet</strong>. Her visualiseres 10'erne nemlig gennem leg med 1 kroner, 10'ere, hundredkronesedler og tusindkronesedler. Et simpelt redskab til at skabe talforståelse med fokus på 10'erne.</li>
+                        <li>Regning gjort <strong>visuelt</strong> kan hjælpe md talforståelse. Du kan lægge grupper af enheden sammen til en bunke og trækker enheder fra bunken. En visual forståelse for, hvordan tallene hænger sammen,fordi enhederne kan omveksles - både den ene og den anden vej.</li>
+                        <li>Regn med penge fungerer i <strong>browseren</strong> på både <strong>computer og tablet</strong>. I kan derfor sidde og øve med Regn med penge derhjemme. I kan lave med simpel tælling og visningen af, hvordan tallene hænger sammen - eller I kan kaster jer ud ismå sjove regnehistorier.</li>
                     </ul>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-4 text-center">
                     <div class="speech-bubble offset mt">
-                        <p>Unsure how to use Regn med Penge?</p>
+                        <p>Se hvordan du bruger Regn med penge her.</p>
                         <div class="rmp-btn light">
-                            <a href="#">Læse brugervejledningen</a>
+                            <a href="#">Gå til brugervejledningen</a>
                         </div>
                     </div>
                 </div>
@@ -53,9 +53,10 @@
                     <img src="<?php echo get_template_directory_uri() . '/img/circle-photo.png' ?>" class="img-responsive">
                 </div>
                 <div class="text-left col-md-6">
-                    <h2>Use in practice</h2>
+                    <h2>Sådan kan du bruge Regn med Penge derhjemme</h2>
                     <p>Til inspiration finder I nogle regnehistorier her på hjemmesiden, hvis I gerne vil gøre det lidt mere spændede end bare "Hvad er 12+9?". På den måde bliver regneøvelserne mere til en sjov leg, som I kan gå på opdagelse i sammen.</p>
-                    <p>Alternativt kan I også bruge eksempler fra jeres egen hverdag. I kan f.eks. beregne priser på dagligvarer, finde ud af hvor dyrt det er at lave fødelseskage eller tage på sommerferie. På den måde styrkes barnets forståelse for penge også.</p>
+                    <p>Vi har lavet nogle regnehistorier, som I kan bruge til inspiration, når I øver regning. Men I kan ogsålave jeres egnesmå historier. I kan fx beregne priser på dagligvarer, finde ud af hvor dyrt det er at lave en fødselsdagskage eller tage på sommerferie. På den måde styrkes barnets forståelse for penge også</p>
+                    <p><a href="/historier/">Få inspiration til historier her.</a></p>
                 </div>
             </div>
         </div>
@@ -64,7 +65,7 @@
     <section id="call-to-action">
         <div class="container">
             <div class="row text-center">
-                <h2 class="mb">The next step in math education. Try it now - it's <strong>free</strong> forever!</h2>
+                <h2 class="mb">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>

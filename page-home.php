@@ -11,14 +11,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-center">En app, du kan regne med</h1>
+                        <h1 class="text-center">Regn med penge</h1>
+                        <h1 class="text-center header-secondary">en app, du kan regne med</h1>
                     </div>
                 </div><!-- /row -->   
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <p>Regn med penge er et digitalt regneredskab, som styrker læringen med 10-talssystemet.</p>
+                        <p>Et digitalt regneredskab, som styrker læringen med 10-talssystemet</p>
                         <span class="rmp-btn green mt">
-                            <a href="#" class="">Prøv free appen</a>
+                            <a href="#" class="">Prøv app her</a>
                         </span>
                         <span class="btn-play">
                             <a href="https://www.youtube.com/watch?v=UAuavls3omQ" rel="vidbox">
@@ -36,8 +37,8 @@
                 <div class="text-justify col-md-5">
                     <h2>Hvad er Regn med penge?</h2>
                     <p>Regn med penge er et simpelt digitalt regneredskab, som kan styrke børns læring med 10-talssystemet samt deres talforståelse. Tallene visualiseres gennem penge så det bliver nemmere at forstå 10'ernes betydning, og hvordan tallene hænger sammen. Regn med penge er tiltænkt børn i 0-2.kl.</p>
-                    <p>Regn med penge er resultatet af samarbejdet mellem en matematiklærer, der savnede et simpelt og fokuseret regneredskab, og to udviklere.</p>
-                    <p>Regn med penge er dog ikke kun tiltænkt undervisningen. Man kan også have gavn af det derhjemme. Kast jer f.eks. ud i regnehistorierne her på hjemmesiden eller find på jeres egne.</p>
+                    <p>Regn med penge er <a href="/om-os/">resultatet af samarbejdet</a> mellem en matematiklærer, der savnede et simpelt og fokuseret regneredskab, og to udviklere.</p>
+                    <p>Regn med penge er dog ikke kun tiltænkt undervisningen. Man kan også have gavn af det derhjemme. <a href="/historier/">Kast jer f.eks. ud i regnehistorierne her</a> på hjemmesiden eller find på jeres egne.</p>
                 </div>
                 <div class="col-md-7">
                     <img src="<?php echo get_template_directory_uri() . '/img/homepage/ipad.png' ?>" class="img-responsive">
@@ -49,7 +50,7 @@
     <section id="photowrap" class="allwrap">
         <div class="container">
             <div class="row centered">
-                <h2 class="text-center">Join over <strong>5,000</strong> satisfied parents & teachers - educate your kids together with Regn med Penge.</h2>
+                <h2 class="text-center">Gør som mere end <strong>5,000</strong> forældre og lærer. Leg og regn med penge sammen med dine børn.</h2>
             </div>
         </div>
     </section>
@@ -57,7 +58,7 @@
     <section id="testimonials" class="pattern">
         <div class="container">
             <div class="row centered">
-                <h2>What others say</h2>
+                <h2>Andre siger</h2>
                 <?php echo do_shortcode('[wcp_testimonial category="Testimonials"]'); ?>
             </div>
         </div>
@@ -66,7 +67,7 @@
     <section id="call-to-action">
         <div class="container">
             <div class="row text-center">
-                <h2 class="mb">The next step in math education. Try it now - it's <strong>free</strong> forever!</h2>
+                <h2 class="mb">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>
