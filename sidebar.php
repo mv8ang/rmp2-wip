@@ -21,7 +21,7 @@
         <aside class="col-md-2">
             <h3 class="widget-title">The App</h3>
             <ul>
-                <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Prøv Appen</a></li>
+                <li><a href="<?php echo get_site_url() . '/prov-appen/'; ?>" class="link-footer-try">Prøv Appen</a></li>
                 <li><a href="<?php echo get_site_url() . '/til-undervisere/'; ?>">Til Undervisere</a></li>
                 <li><a href="<?php echo get_site_url() . '/til-foraeldre/'; ?>">Til Forældre</a></li>
                 <li><a href="<?php echo get_site_url() . '/historier/'; ?>">Historier</a></li>

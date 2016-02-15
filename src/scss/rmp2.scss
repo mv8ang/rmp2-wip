@@ -1,16 +1,19 @@
 @import 'vars';
 
 *, a, img {
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 a {
+    color: $green;
+    
     &:hover, &:focus {
         text-decoration: none;
     }
     
+    &:hover {
+        color: $dark-green;
+    }
 }
 
 ::-moz-selection {
@@ -125,6 +128,19 @@ a.navbar-brand {
     padding: 0 20px;
 }
 
+.navbar-custom #menu-main-navigation .rmp-btn {
+    top: 5px;
+    margin-right: 25px;
+    
+    &:last-of-type {
+        margin-right: 0;
+    }
+    
+    a {
+        padding: 10px 15px;
+    }
+}
+
 .navbar-custom .navbar-brand {
     font-weight: 700
 }
@@ -182,15 +198,8 @@ a.navbar-brand {
 @media only screen and (min-width:1170px) {
     .navbar-custom {
         padding: 10px 0;
-        -webkit-transition: background-color .3s;
-        -moz-transition: background-color .3s;
         transition: background-color .3s;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        -webkit-backface-visibility: hidden;
         backface-visibility: hidden
     }
     .navbar-custom.is-fixed {
@@ -199,8 +208,6 @@ a.navbar-brand {
         padding: 10px 0;
         background-color: rgba(255, 255, 255, .9);
         border-bottom: 1px solid #f2f2f2;
-        -webkit-transition: -webkit-transform .3s;
-        -moz-transition: -moz-transform .3s;
         transition: transform .3s
     }
     .navbar-custom.is-fixed .navbar-brand {
@@ -218,10 +225,6 @@ a.navbar-brand {
         color: #777
     }
     .navbar-custom.is-visible {
-        -webkit-transform: translate3d(0, 100%, 0);
-        -moz-transform: translate3d(0, 100%, 0);
-        -ms-transform: translate3d(0, 100%, 0);
-        -o-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0)
     }
 
@@ -254,14 +257,12 @@ a.navbar-brand {
 
 a .fa-stack { color:#999; }
 a .fa-circle {
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 a:hover .fa-circle  { color: $dark-grey;}
 
 .overlay {
-    background: rgba(80, 57, 127, 1);
+    background: rgba(80, 57, 127, .95);
     padding: 150px 0;
 }
 
@@ -284,9 +285,6 @@ a:hover .fa-circle  { color: $dark-grey;}
     background-attachment: fixed;
     background-position: center center;
     width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -403,11 +401,13 @@ a:hover .fa-circle  { color: $dark-grey;}
     a {
         text-align: center;
         position: relative;
-        color: $white;
+        color: $white !important;
         width: 100%;
         height: auto;
         padding: 15px 25px;
         display: inline-block;
+        cursor: pointer;
+        font-style: normal;
     } 
     
     &:before {
@@ -427,6 +427,44 @@ a:hover .fa-circle  { color: $dark-grey;}
     &.green {
         background: $green;
     }
+    &.blue {
+        background: $blue;
+    }
+    &.white {
+        background: $white;
+        
+        a {
+            color: $dark-grey !important;
+        }
+    }
+    
+    &.slim {
+        a {
+            padding: 8px 25px;
+            font-size: 16px;
+        }
+    }
+    
+    &.light {
+        &:before {
+            border-color: $white;
+            left: 0;
+            top: 0;
+        }
+        
+        a {
+            font-size: 16px;
+        }
+    }
+    
+    .swing {
+        &:before {
+            transform-origin: top center;
+            animation-name: swing;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+    }
     
     &:hover {
         background: $dark-green;
@@ -444,6 +482,13 @@ a:hover .fa-circle  { color: $dark-grey;}
 } 
 
 /*******************
+* TESTIMONIALS SECTION
+****************/
+#testimonials {
+    padding: 100px 0;
+}
+
+/*******************
 * PHOTOWRAP SECTION
 *******************/
 #photowrap {
@@ -451,6 +496,19 @@ a:hover .fa-circle  { color: $dark-grey;}
 }
 
 #call-to-action {
+    background: $dark-grey;
+    padding: $padding-section;
+    color: $white;
+
+    .container {
+        h2 {
+            color: $white;
+            font-style: italic;
+            text-transform: none;
+            font-weight: normal;
+        }
+    }
+    
     .call-left,
     .call-right {
         height: 400px;
@@ -519,6 +577,13 @@ a:hover .fa-circle  { color: $dark-grey;}
     padding: 60px 0 50px 0;
     font-size: 16px;
 
+    .link-footer-try {
+        color: $green;
+        
+        &:hover {
+            color: $dark-green;
+        }
+    }
     
     ul {
         padding-left: 0;
@@ -531,6 +596,10 @@ a:hover .fa-circle  { color: $dark-grey;}
             a {
                 color: $dark-grey;
                 text-decoration: none;
+                
+                &:hover {
+                    color: $green;
+                }
             }
         }
     }
@@ -601,7 +670,10 @@ footer {
     }
     
     &:hover {
-        background-color: $grey-highlight;
+        box-shadow: 0px 2px 6px $grey;
+//        margin-top: -5px;
+//        margin-bottom: 25px;
+        margin-left: 10px;
     }
     
     p {
@@ -625,24 +697,10 @@ footer {
     }
 }
 
-#call-to-action {
-    background: $dark-grey;
-    padding: 30px 0 100px 0;
-    color: $white;
-    
-    .container {
-         h2 {
-            color: $white;
-            font-style: italic;
-            text-transform: none;
-            font-weight: normal;
-        }
-    }
-}
 
 #content-home-2 {
     background: $white;
-    padding-top: 30px;
+    padding: 100px 0;
 
     h2 {
         margin-bottom: 30px;
@@ -653,7 +711,7 @@ footer {
 .page-home, .page-teachers, .page-parents, .page-stories, .page-press {
     #content-home {
         background: $dark-white;
-        padding-top: 30px;
+        padding: 100px 0;
         
         a {
             color: $dark-grey;
@@ -689,13 +747,19 @@ footer {
     }
 }
 
-.page-home {
-    #headerwrap {
-        img {
-            display: block;
-            top: 100px;
-            position: relative;
-            margin: 0 auto;
+.btn-play {
+    a {
+        display: block;
+        position: relative;
+        background-image: url(../img/btn-play.png);
+        height: 56px;
+        width: 56px;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+        &:hover {
+            opacity: .8;
         }
     }
 }
@@ -703,7 +767,7 @@ footer {
 
 .page-contact {
     section.container {
-        padding-bottom: 100px;
+        padding-bottom: 140px;
     }
 }
 .page-contact .contact-info {
@@ -746,6 +810,7 @@ footer {
         h2 {
             text-transform: uppercase;
             color: $white;
+            font-weight: 700;
         }
         
         p {
@@ -771,6 +836,18 @@ footer {
     #wrapper-team {
         h2 {
             margin-bottom: 130px;
+        }
+        
+        a {
+            color: $green;
+            font-weight: 400;
+            &:hover {
+                color: $dark-green
+            }
+            
+            &.linkedin {
+                color: $white;
+            }
         }
     }
     
@@ -803,7 +880,6 @@ footer {
             transform: translate(-50%, 0);
             content: '';
             background: $dark-white;
-//            background-image: url(../img/contact/Kenneth-rounded.png);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -819,10 +895,21 @@ footer {
         }
         &.michael:before {
             background-image: url(../img/contact/Michael-rounded.png);
-        }        
+        }       
+        
+//        &:hover {
+//            background: $white;
+//        }
+        
+        
+//        &:hover:before {
+//            background-size: 120%;
+//            transition: all .2s ease-in-out;
+//            border: none;
+//        }
     }
+        
 }
-
 
 
 
@@ -831,11 +918,55 @@ footer {
     width: auto;
     line-height: 30px;
     display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
-    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 160px 60px 40px 60px;
     width: 100%;
+    
+    &.press {
+        padding: 40px 60px 40px 60px;
 
+        &:after {
+            background-image: url(../img/contact/Michael-rounded.png);
+            top: 21%;
+        }
+        
+        h3 {
+            margin-bottom: 200px;
+        }
+    }
+    &.teachers {
+        padding: 160px 60px 40px 60px;
+        
+        &:after {
+            background-image: url(../img/contact/Kenneth-rounded.png);
+
+        }
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        margin: 40px auto;
+        border: 6px solid white;
+        border-radius: 90%;
+        background-size: contain;
+    }
+    
+    &:hover:after {
+        animation-name: pulse;
+        transform-origin: center center;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+    }
+    
     &.offset {
         position: relative;
         background: transparent;
@@ -857,10 +988,17 @@ footer {
             background: $blue-transparent;
         }
     }
+    
+    &:hover.offset:before {
+// moves the background on hover
+//        left: -6px;
+//        top: -6px;
+//        transition: all .1s ease-in-out;
+    }
 
     a {
         text-align: center;
-        color: $white;
+        color: $white !important;
         text-decoration: none;
         display: block;
     }
@@ -868,6 +1006,7 @@ footer {
     h3, h4 {
         text-transform: uppercase;
         color: $white;
+        font-weight: 700;
     }
 
     p {
@@ -885,6 +1024,16 @@ footer {
     }
 }
 
+
+.page-teachers {
+    .speech-bubble {
+        padding: 30px;
+        
+        p {
+            padding: 0;
+        }
+    }
+}
 .speech-bubble {
     height: auto;
     width: auto;
@@ -892,8 +1041,12 @@ footer {
     display: inline-block;
     font-size: 18px;
     font-style: italic;
-    padding: 30px;
-
+    padding: 30px 30px 50px 30px;
+    
+    p {
+        padding: 0 50px;
+    }
+    
     &.offset {
         position: relative;
         background: transparent;
@@ -902,6 +1055,7 @@ footer {
         color: $white;
         text-align: center;
 
+        
         &:before {
             content: ' ';
             display: block;
@@ -926,6 +1080,17 @@ footer {
             display: block;
             width: 0;
             opacity: 0.7;
+        }
+        
+        // moves background on hover
+//        &:hover:before {
+//            top: -6px;
+//            left: 6px;
+//            transition: all .2s ease-in-out;
+//        }
+        
+        &:hover:after {
+            border: none;
         }
     }
 }
@@ -1011,8 +1176,8 @@ footer {
         }
         li:nth-of-type(2) {
             border-radius: 0 0 0 0;  
-            border-right: 2.5px solid $white;
-            border-left: 2.5px solid $white;
+            border-right: 1px solid $white;
+            border-left: 1px solid $white;
             
             &.active a,
             &>a:hover,
@@ -1045,7 +1210,8 @@ footer {
         margin-top: 35px;
 
         &:hover {
-            background: $dark-white;
+            margin-top: 30px;
+            box-shadow: 0px 6px 15px $grey;
         }
         
         h2 {
@@ -1144,12 +1310,18 @@ footer {
             font-style: italic;
             font-size: 18px;
             padding-top: 10px;
+            padding-bottom: 12px;
+        }
+        
+        .intro-card {
+            h2 {
+                text-transform: uppercase;
+            }
         }
         .intro-card:hover {
             h2, p {
                 color: $white;
             }
-
         }
         img {
             top: auto;
@@ -1260,10 +1432,6 @@ footer {
 
 
 .page-press {
-    .quote-card {
-        padding: 40px;
-    }
-    
     #content-home-2 {
         img {
             width: 100%;
@@ -1314,5 +1482,41 @@ footer {
 
     90% {
         transform: translate(-50%,-50%) translate3d(0,-14px,0) rotateZ(45deg);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: translate(-50%, 0) scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: translate(-50%, 0) scale3d(1.05, 1.05, 1.05);
+    } 
+
+    to {
+        transform: translate(-50%, 0) scale3d(1, 1, 1);
+    }
+}
+
+@keyframes swing {
+    20% {
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    40% {
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+
+    60% {
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 1, 0deg);
     }
 }

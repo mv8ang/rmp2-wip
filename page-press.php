@@ -24,7 +24,7 @@
 
     <section id="content-home">
         <div class="container">
-            <div class="row mt mb">
+            <div class="row mt">
                 <div class="col-md-12">
                     <h2>Fordele ved Regn med penge</h2>
                 </div>
@@ -63,11 +63,88 @@
                             </div>
                         </div>
                     </a>
+                    
+                    <div class="col-md-12 collapse" id="demo" style="height: 0px;">
+                        
+                        <!-- place hidden pr links here -->
+                        <a href="#">
+                            <div class="col-md-12 press-release pdf">
+                                <p class="title">Apps med mere til matematik</p>
+                                <div class="release-meta">
+                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="col-md-12 press-release pdf">
+                                <p class="title">Apps med mere til matematik</p>
+                                <div class="release-meta">
+                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="col-md-12 press-release pdf">
+                                <p class="title">Apps med mere til matematik</p>
+                                <div class="release-meta">
+                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="col-md-12 press-release pdf">
+                                <p class="title">Apps med mere til matematik</p>
+                                <div class="release-meta">
+                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="col-md-12 press-release pdf">
+                                <p class="title">Apps med mere til matematik</p>
+                                <div class="release-meta">
+                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="col-md-12 press-release pdf">
+                                <p class="title">Apps med mere til matematik</p>
+                                <div class="release-meta">
+                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="col-md-12 press-release pdf">
+                                <p class="title">Apps med mere til matematik</p>
+                                <div class="release-meta">
+                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="col-md-12 press-release pdf">
+                                <p class="title">Apps med mere til matematik</p>
+                                <div class="release-meta">
+                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        
+                    </div>
+
+                    <div class="col-md-12 centered">
+                        <div class="rmp-btn green slim mb">
+                            <a data-toggle="collapse" data-target="#demo">Load more</a>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md-4 col-md-offset-1 text-center">
-                    <div class="quote-card offset">
+                    <div class="quote-card press offset">
                         <h3>Press contact</h3>
-                        <img src="<?php echo get_template_directory_uri() . '/img/contact/Michael-rounded.png' ?>" class="img-responsive">
                         <h4>Michael Barkholt</h4>
                         <a href="mailto:michael@corteza.dk">michael@corteza.dk</a>
                         <a href="tel:004522362120">+45 22362120</a>
@@ -81,7 +158,7 @@
         <div class="container">
             <div class="row mt mb">
                 <div class="col-md-12 text-left">
-                    <h3>Regn med Penge logo</h3>
+                    <h2>Regn med Penge logo</h2>
                 </div>
                 <div class="col-md-3">
                     <img src="<?php echo get_template_directory_uri() . '/img/press-assets/logo-dark.png'; ?>" alt="">

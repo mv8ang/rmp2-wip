@@ -20,7 +20,10 @@
                         <span class="rmp-btn green mt">
                             <a href="#" class="">Prøv free appen</a>
                         </span>
-                        <img src="<?php echo get_template_directory_uri() . '/img/btn-play.png'; ?>" alt="Play video">
+                        <span class="btn-play">
+                            <a href="https://www.youtube.com/watch?v=UAuavls3omQ" rel="vidbox">
+                            </a>
+                        </span>
                     </div>
                 </div><!-- /row -->
             </div> <!-- /container -->

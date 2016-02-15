@@ -24,7 +24,7 @@
 
     <section id="content-home">
         <div class="container">
-            <div class="row mt mb">
+            <div class="row">
                 <div class="text-left col-md-7">
                     <h2>Fordele ved Regn med penge</h2>
                     <p>Regn med penge giver en del fordele i din undervisning fx:</p>
@@ -37,8 +37,7 @@
                     </ul>
                 </div>
                 <div class="col-md-5 text-center">
-                    <div class="quote-card offset">
-                        <img src="<?php echo get_template_directory_uri() . '/img/contact/Kenneth-rounded.png' ?>" class="img-responsive">
+                    <div class="quote-card teachers offset">
                         <h4>Louise Friis Fiskaali</h4>
                         <p>math teacher, co-founder</p>
                         <blockquote>"Regn med penge det visuelle, digitale matematikværktøj, der hjælper til forståelsen af 10talssystemet. Har dine elever svært ved at regne den ud? Så understøtter "Regn med penge" elevernes læring i arbejdet med tal."</blockquote>
@@ -50,7 +49,7 @@
     
     <section id="content-home-2">
         <div class="container">
-            <div class="row mt mb">
+            <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="speech-bubble offset mt">
                         <p>Regn med penge er kompatibel med smartboard og kan derigenem bruges i klasseundervisningen. Det kan dog også køre på tablets, så eleverne kan sidde med det individuelt eller i grupper.</p>

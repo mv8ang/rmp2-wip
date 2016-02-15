@@ -100,7 +100,7 @@
                         <h2>Press</h2>
                         <p>Read the press mentions and see design assets</p>
                         
-                        <span class="rmp-btn">
+                        <span class="rmp-btn light">
                             <a href="/press/">Visit the press page</a>
                         </span>
                     </div>

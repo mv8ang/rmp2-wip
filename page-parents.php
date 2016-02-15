@@ -37,6 +37,9 @@
                 <div class="col-md-4 text-center">
                     <div class="speech-bubble offset mt">
                         <p>Unsure how to use Regn med Penge?</p>
+                        <div class="rmp-btn light">
+                            <a href="#">Læse brugervejledningen</a>
+                        </div>
                     </div>
                 </div>
             </div>
