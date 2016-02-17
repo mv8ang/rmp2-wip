@@ -30,7 +30,31 @@
                 </div>
                 <div class="text-left col-md-7">
                     <!-- when adding a new class, include the pdf/web class -->
-                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?> ">
+                    
+                    <!-- pdf template -->
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>FILENAMEHERE">
+                        <div class="col-md-12 press-release pdf">
+                            <p class="title">Apps med mere til matematik</p>
+                            <div class="release-meta">
+                                <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- eot -->
+                    
+                    <!-- link template -->
+                    <a href="LINKHERE">
+                        <div class="col-md-12 press-release web">
+                            <p class="title">Apps med mere til matematik</p>
+                            <div class="release-meta">
+                                <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- eot -->
+                    
+                    
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-02-14_Min_Kusine_Maria.pdf">
                         <div class="col-md-12 press-release pdf">
                             <p class="title">Apps med mere til matematik</p>
                             <div class="release-meta">
@@ -39,7 +63,7 @@
                         </div>
                     </a>
                     
-                    <a href="#">
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-02-14_Min_Kusine_Maria.pdf">
                         <div class="col-md-12 press-release pdf">
                             <p class="title">Apps med mere til matematik</p>
                             <div class="release-meta">
@@ -47,22 +71,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#">
-                        <div class="col-md-12 press-release web">
-                            <p class="title">Apps med mere til matematik</p>
-                            <div class="release-meta">
-                                <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="col-md-12 press-release pdf">
-                            <p class="title">Apps med mere til matematik</p>
-                            <div class="release-meta">
-                                <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
-                            </div>
-                        </div>
-                    </a>
+                    
+                    
+                    
                     
                     <div class="col-md-12 collapse" id="demo" style="height: 0px;">
                         
