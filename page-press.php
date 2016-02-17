@@ -30,7 +30,7 @@
                 </div>
                 <div class="text-left col-md-7">
                     <!-- when adding a new class, include the pdf/web class -->
-                    <a href="#">
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?> ">
                         <div class="col-md-12 press-release pdf">
                             <p class="title">Apps med mere til matematik</p>
                             <div class="release-meta">
