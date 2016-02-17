@@ -27,7 +27,7 @@
     <section id="headerwrap" class="allwrap">
         <div class="overlay pattern"><!-- add .overlay for 100vh -->
             <div class="container">
-                <div class="row">
+                <div class="row centered">
                     <img src="<?php echo get_template_directory_uri() . '/img/logo-black-big.png'; ?>" alt="" class="img-responsive">
                     </div>
                 <div class="row mb">
@@ -41,7 +41,7 @@
                        <div class="intro-card left">
                             <h2>Elev</h2>
                             <p>Prøv regneapp</p>
-                            <a href=""></a>
+                            <a href="http://test.regnmedpenge.dk/"></a>
                        </div>
                     </div>
                     <div class="col-md-6">

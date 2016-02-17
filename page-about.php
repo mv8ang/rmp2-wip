@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-center">Teamet</h1>
+                        <h1 class="text-center">Om os</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -41,7 +41,7 @@
 
     <section id="wrapper-team" class="allwrap mb mt">
         <div class="container">
-                <h2 class="text-center">Meet the team</h2>
+                <h2 class="text-center">Teamet</h2>
             <div class="row centered">
                 <div class="col-md-4">
                     <div class="col-md-12 team-member louise">

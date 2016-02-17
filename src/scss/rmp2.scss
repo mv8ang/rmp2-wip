@@ -61,6 +61,13 @@ hr {
     margin-bottom: 70px;
 }
 
+.pt {
+    padding-top: 150px;
+}
+.pb {
+    padding-bottom: 100px;
+}
+
 
 /* ==========================================================================
 General styles
@@ -130,8 +137,8 @@ a.navbar-brand {
 }
 
 .navbar-custom #menu-main-navigation .rmp-btn {
-    top: 5px;
-    margin-right: 25px;
+    top: 9px;
+    margin-right: 15px;
     
     &:last-of-type {
         margin-right: 0;
@@ -139,6 +146,8 @@ a.navbar-brand {
     
     a {
         padding: 10px 15px;
+        top: -4px;
+        left: 3px;
     }
 }
 
@@ -384,7 +393,11 @@ a:hover .fa-circle  { color: $dark-grey;}
     
     &.linkedin, &.facebook {
         &::before {
-            background: $blue;
+            background: $dark-blue;
+        }
+        
+        &:hover::before {
+            background: #001e61;
         }
     }
 }
@@ -400,10 +413,8 @@ a:hover .fa-circle  { color: $dark-grey;}
     position: relative;
     background: transparent;
     z-index: 1;
-    border-radius: 25px;
     text-transform: uppercase;
     color: $white;
-    background: transparent;
     
     a {
         text-align: center;
@@ -436,6 +447,9 @@ a:hover .fa-circle  { color: $dark-grey;}
     }
     &.blue {
         background: $blue;
+        &:hover {
+            background: $dark-blue;
+        }
     }
     &.white {
         background: $white;
@@ -460,8 +474,13 @@ a:hover .fa-circle  { color: $dark-grey;}
         }
     }
     
+
+    &:hover {
+        background: $dark-green;
+    }
+    
     &.light {
-        &:before {
+        &::before {
             border-color: $white;
             left: 0;
             top: 0;
@@ -469,6 +488,15 @@ a:hover .fa-circle  { color: $dark-grey;}
         
         a {
             font-size: 16px;
+        }
+        
+        &:hover {
+            a {
+                color: $dark-grey !important;
+            }
+        }
+        &:hover::before {
+            background: $white;
         }
     }
     
@@ -480,10 +508,7 @@ a:hover .fa-circle  { color: $dark-grey;}
             animation-fill-mode: both;
         }
     }
-    
-    &:hover {
-        background: $dark-green;
-    }
+
 }
 
 
@@ -555,7 +580,7 @@ a:hover .fa-circle  { color: $dark-grey;}
 * COMPATIBILITY SECTION
 ***********************/
 #compatibility {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     
     h2 {
         color: $purple;
@@ -731,6 +756,14 @@ footer {
     }
 }
 
+.page-press {
+    #content-home {
+        padding: 10px 0;
+
+    }
+}
+
+
 .page-teachers, .page-parents, .page-stories, .page-press {
     #content-home {
         a {
@@ -774,7 +807,7 @@ footer {
         background-image: url(../img/btn-play.png);
         height: 56px;
         width: 56px;
-        top: 100px;
+        top: 10vh;
         left: 50%;
         transform: translate(-50%, 0);
         
@@ -1005,7 +1038,7 @@ footer {
             height: 100%;
             z-index: -1;
             opacity: 0.7;
-            background: $blue-transparent;
+            background: $dark-blue;
         }
     }
     
@@ -1102,16 +1135,21 @@ footer {
             opacity: 0.7;
         }
         
+        .rmp-btn {
+            &:hover {
+                background: $white;
+                
+                a {
+                    color: $green !important;
+                }
+            }
+        }
         // moves background on hover
 //        &:hover:before {
 //            top: -6px;
 //            left: 6px;
 //            transition: all .2s ease-in-out;
 //        }
-        
-        &:hover:after {
-            border: none;
-        }
     }
 }
 
@@ -1128,15 +1166,24 @@ footer {
 
 .page-try {
     #wrapper-team {
+        background-color: $dark-white;
+        padding-top: 70px;
+        padding-bottom: 100px;
+        
         h2 {
             margin-bottom: 25px;
         }
         
         .instruction {
-            background: $dark-white;
+            background: $white;
             height: 420px;
             font-size: 16px;
             padding: 35px;
+            
+            &:hover {
+                margin-top: -15px;
+                box-shadow: 0px 6px 15px $grey;
+            }
             
             &.ipad {
                 color: $white;
@@ -1175,7 +1222,7 @@ footer {
         li {
             background: $purple;
             &.active a {
-                background: $purple;
+                background: $dark-purple;
             }
             
             a {
@@ -1261,6 +1308,10 @@ footer {
             border-radius: 90px;
             width: 80%;
             
+            &:hover {
+                background-size: 20%;
+            }
+            
             &.pdf {
                 background-image: url(../img/icon-pdf.png);
             }
@@ -1279,14 +1330,14 @@ footer {
     .dl-all {
         color: $dark-grey;
         background: $white transparent;
-        background-size: 35px;
-        background-position: 16px;
+        background-size: 40px;
+        background-position: 15px;
         background-repeat: no-repeat;
         display: block;
-        padding: 10px 10px 10px 80px;
+        padding: 10px 10px 10px 60px;
         margin: 0 auto;
         font-size: 18px;
-        font-weight: bold;
+        font-weight: 600;
         text-align: left;
         text-transform: uppercase;
         border: 2px solid $dark-grey;
@@ -1308,7 +1359,7 @@ footer {
     &:hover {
         background-color: $purple;
         color: $white;
-        background-size:20%;
+        background-size: 13%;
         background-position: 6px;
     }
 }
@@ -1347,6 +1398,7 @@ footer {
             top: auto;
             width: 150px;
             margin-bottom: 50px;
+            display: inline-block;
         }
         .overlay {
             background-color: transparent;
@@ -1360,7 +1412,7 @@ footer {
     &.page-home {
         #headerwrap {
             .overlay {
-                height: 90vh;
+                height: 95vh;
                 
                 @media (max-width: 992px) {
                     height: 100%;
@@ -1370,6 +1422,38 @@ footer {
         }
     }
 }
+
+.error404 {
+    @media only screen and (min-width: 768px) {
+        .navbar-default .navbar-nav > li > a {
+            color: $dark-grey;
+        }
+    }
+    
+    a.navbar-brand {
+        background-image: url(../img/logo-black.png);
+    }
+}
+
+.page-404 {
+    background: {
+        image: url('../img/pattern-block.png');
+        repeat: repeat;
+    }
+    
+    .container {
+        
+        h2 {
+            text-transform: none;
+        }
+        
+        img {
+            padding-bottom: 20px;
+        }
+    }
+    
+}
+
 
 .intro-card {
     background: $dark-white;

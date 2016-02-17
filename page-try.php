@@ -10,15 +10,15 @@
             <div class="container centered">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-center">Prøv Appen</h1>
+                        <h1 class="text-center">Prøv Regn med Penge</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="text-center">Du kan prøve Regn med penge her i browseren.
-                        <br>Det behøver altså ikke installere noget for at se, hvordan Regn med penge fungerer.</p>
+                        <p class="text-center">Du kan prøve appen her i browseren.
+                        <br>Det behøver altså ikke installere noget for at prøve Regn med penge.</p>
                         <div class="rmp-btn green mt">
-                            <a href="#">Start Regn med Penge</a>
+                            <a href="http://test.regnmedpenge.dk/">Start Regn med Penge</a>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
         </div>
     </section><!-- /headerwrap -->
 
-    <section id="wrapper-team" class="allwrap mb mt">
+    <section id="wrapper-team" class="allwrap">
         <div class="container">
             <div class="row">
                 <h2 class="text-center">Brugervejledning</h2>
@@ -95,7 +95,7 @@
         <div class="container">
             <div class="row mt mb text-center">
                 <div class="col-md-6 devices">
-                    <h2>Compatible devices</h2>
+                    <h2>Kompatible enheder</h2>
                     <p>Regn med penge kan bruges på følgende touch enheder:</p>
                     <row>
                         <div class="col-md-6">
@@ -109,7 +109,7 @@
                     </row>
                 </div>
                 <div class="col-md-6 browsers">
-                    <h2>Compatible browsers</h2>
+                    <h2>Kompatible browsere</h2>
                     <p>Regn med penge kan køre i følgende browsere:</p>
                     <div class="col-md-3">
                         <img src="<?php echo get_template_directory_uri() . '/img/compatibility/chrome.png'; ?>" alt="">

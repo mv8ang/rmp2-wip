@@ -13,6 +13,7 @@
                 <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Om os</a></li>
                 <li><a href="<?php echo get_site_url() . '/contact'; ?>">Kontakt</a></li>
                 <li><a href="<?php echo get_site_url() . '/press'; ?>">Press</a></li>
+                <li><a href="<?php echo get_site_url() . '/credits'; ?>">Credits</a></li>
             </ul>
         </aside>
         <aside class="col-md-1">

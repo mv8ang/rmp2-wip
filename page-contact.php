@@ -10,12 +10,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-center">Contact us</h1>
+                        <h1 class="text-center">Kontakt os</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="text-center">Comments? Questions? Let's keep in touch.</p>
+                        <p class="text-center">Ris eller ros? Spørgsmål? Andet...?</p>
                     </div>
                 </div>
             </div> <!-- /container -->
@@ -25,8 +25,8 @@
     <section class="container">
         <div class="row mt mb">
             <div class="col-md-12">
-                <h2 class="text-center">Kontaktinformationer</h2>
-                <p class="text-center">For any kind of contact, please write or cal Michael Barkholt</p>
+                <h2 class="text-center">Kontakt information</h2>
+                <p class="text-center">For spørgsmål eller andet, kontakt venligst Michael Barkholt</p>
             </div>
         </div>
         

@@ -177,7 +177,7 @@
                     <p>Download 
                     <a href="<?php echo get_template_directory_uri() . '/img/press-assets/logo-dark.png'; ?>" target="_blank">Png</a> 
                     | 
-                    <a href="<?php echo get_template_directory_uri() . '/img/press-assets/logo-dark.eps'; ?>" target="_blank">Eps</a></p>
+                        <a href="<?php echo get_template_directory_uri() . '/img/press-assets/RegnMedPenge-logo-dark.eps'; ?>" target="_blank">Eps</a></p>
                 </div>
                 
                 <div class="col-md-3 asset-logo-white">
@@ -185,7 +185,7 @@
                     <p>Download 
                     <a href="<?php echo get_template_directory_uri() . '/img/press-assets/logo-white.png'; ?>" target="_blank">Png</a> 
                     | 
-                    <a href="<?php echo get_template_directory_uri() . '/img/press-assets/logo-white.eps'; ?>" target="_blank">Eps</a></p>
+                        <a href="<?php echo get_template_directory_uri() . '/img/press-assets/RegnMedPenge-logo-white.eps'; ?>" target="_blank">Eps</a></p>
                 </div>
                 
             </div>

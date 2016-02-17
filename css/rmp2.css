@@ -58,6 +58,14 @@ hr {
   margin-bottom: 70px;
 }
 
+.pt {
+  padding-top: 150px;
+}
+
+.pb {
+  padding-bottom: 100px;
+}
+
 /* ==========================================================================
 General styles
 ========================================================================== */
@@ -124,14 +132,16 @@ a.navbar-brand {
 }
 
 .navbar-custom #menu-main-navigation .rmp-btn {
-  top: 5px;
-  margin-right: 25px;
+  top: 9px;
+  margin-right: 15px;
 }
 .navbar-custom #menu-main-navigation .rmp-btn:last-of-type {
   margin-right: 0;
 }
 .navbar-custom #menu-main-navigation .rmp-btn a {
   padding: 10px 15px;
+  top: -4px;
+  left: 3px;
 }
 
 .navbar-custom .navbar-brand {
@@ -388,7 +398,10 @@ a:hover .fa-circle {
   border-radius: 25px;
 }
 .social.linkedin::before, .social.facebook::before {
-  background: #4272b8;
+  background: #00309e;
+}
+.social.linkedin:hover::before, .social.facebook:hover::before {
+  background: #001e61;
 }
 
 /* TODO: should do something about repeating btn styles */
@@ -399,10 +412,8 @@ a:hover .fa-circle {
   position: relative;
   background: transparent;
   z-index: 1;
-  border-radius: 25px;
   text-transform: uppercase;
   color: white;
-  background: transparent;
 }
 .rmp-btn a {
   text-align: center;
@@ -434,6 +445,9 @@ a:hover .fa-circle {
 .rmp-btn.blue {
   background: #4272b8;
 }
+.rmp-btn.blue:hover {
+  background: #00309e;
+}
 .rmp-btn.white {
   background: white;
 }
@@ -450,13 +464,22 @@ a:hover .fa-circle {
   padding: 8px 25px;
   font-size: 16px;
 }
-.rmp-btn.light:before {
+.rmp-btn:hover {
+  background: #25714a;
+}
+.rmp-btn.light::before {
   border-color: white;
   left: 0;
   top: 0;
 }
 .rmp-btn.light a {
   font-size: 16px;
+}
+.rmp-btn.light:hover a {
+  color: #282828 !important;
+}
+.rmp-btn.light:hover::before {
+  background: white;
 }
 .rmp-btn .swing:before {
   -webkit-transform-origin: top center;
@@ -468,9 +491,6 @@ a:hover .fa-circle {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
-.rmp-btn:hover {
-  background: #25714a;
 }
 
 /************************
@@ -529,7 +549,7 @@ a:hover .fa-circle {
 * COMPATIBILITY SECTION
 ***********************/
 #compatibility {
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 #compatibility h2 {
   color: #50397f;
@@ -678,6 +698,10 @@ footer p {
   padding: 100px 0;
 }
 
+.page-press #content-home {
+  padding: 10px 0;
+}
+
 .page-teachers #content-home a, .page-parents #content-home a, .page-stories #content-home a, .page-press #content-home a {
   color: #282828;
 }
@@ -716,7 +740,7 @@ footer p {
   background-image: url(../img/btn-play.png);
   height: 56px;
   width: 56px;
-  top: 100px;
+  top: 10vh;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
@@ -907,7 +931,7 @@ footer p {
   height: 100%;
   z-index: -1;
   opacity: 0.7;
-  background: #07449f;
+  background: #00309e;
 }
 .quote-card a {
   text-align: center;
@@ -984,8 +1008,11 @@ footer p {
   width: 0;
   opacity: 0.7;
 }
-.speech-bubble.offset:hover:after {
-  border: none;
+.speech-bubble.offset .rmp-btn:hover {
+  background: white;
+}
+.speech-bubble.offset .rmp-btn:hover a {
+  color: #339a65 !important;
 }
 
 .page-parents .speech-bubble {
@@ -995,14 +1022,24 @@ footer p {
   border-width: 60px 0 0 60px;
 }
 
+.page-try #wrapper-team {
+  background-color: whitesmoke;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
 .page-try #wrapper-team h2 {
   margin-bottom: 25px;
 }
 .page-try #wrapper-team .instruction {
-  background: whitesmoke;
+  background: white;
   height: 420px;
   font-size: 16px;
   padding: 35px;
+}
+.page-try #wrapper-team .instruction:hover {
+  margin-top: -15px;
+  -webkit-box-shadow: 0px 6px 15px #9e9e9e;
+  box-shadow: 0px 6px 15px #9e9e9e;
 }
 .page-try #wrapper-team .instruction.ipad {
   color: white;
@@ -1030,7 +1067,7 @@ footer p {
   background: #50397f;
 }
 .page-stories .nav-pills li.active a {
-  background: #50397f;
+  background: #47356c;
 }
 .page-stories .nav-pills li a {
   color: white;
@@ -1099,6 +1136,10 @@ footer p {
   border-radius: 90px;
   width: 80%;
 }
+.page-stories .story a:hover {
+  -webkit-background-size: 20%;
+  background-size: 20%;
+}
 .page-stories .story a.pdf {
   background-image: url(../img/icon-pdf.png);
 }
@@ -1112,15 +1153,15 @@ footer p {
 .page-stories .dl-all {
   color: #282828;
   background: white transparent;
-  -webkit-background-size: 35px;
-  background-size: 35px;
-  background-position: 16px;
+  -webkit-background-size: 40px;
+  background-size: 40px;
+  background-position: 15px;
   background-repeat: no-repeat;
   display: block;
-  padding: 10px 10px 10px 80px;
+  padding: 10px 10px 10px 60px;
   margin: 0 auto;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: left;
   text-transform: uppercase;
   border: 2px solid #282828;
@@ -1138,8 +1179,8 @@ footer p {
 .story a:hover {
   background-color: #50397f;
   color: white;
-  -webkit-background-size: 20%;
-  background-size: 20%;
+  -webkit-background-size: 13%;
+  background-size: 13%;
   background-position: 6px;
 }
 
@@ -1163,6 +1204,7 @@ footer p {
   top: auto;
   width: 150px;
   margin-bottom: 50px;
+  display: inline-block;
 }
 .page-intro #headerwrap .overlay {
   background-color: transparent;
@@ -1171,13 +1213,33 @@ footer p {
   margin-top: 0;
 }
 .page-intro.page-home #headerwrap .overlay {
-  height: 90vh;
+  height: 95vh;
 }
 @media (max-width: 992px) {
   .page-intro.page-home #headerwrap .overlay {
     height: 100%;
     padding-bottom: 100px;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .error404 .navbar-default .navbar-nav > li > a {
+    color: #282828;
+  }
+}
+.error404 a.navbar-brand {
+  background-image: url(../img/logo-black.png);
+}
+
+.page-404 {
+  background-image: url("../img/pattern-block.png");
+  background-repeat: repeat;
+}
+.page-404 .container h2 {
+  text-transform: none;
+}
+.page-404 .container img {
+  padding-bottom: 20px;
 }
 
 .intro-card {
