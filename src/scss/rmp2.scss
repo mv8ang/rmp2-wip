@@ -510,12 +510,6 @@ a:hover .fa-circle  { color: $dark-grey;}
     height: 100vh;
 } 
 
-/*******************
-* TESTIMONIALS SECTION
-****************/
-#testimonials {
-    padding: 100px 0;
-}
 
 /*******************
 * PHOTOWRAP SECTION
@@ -1689,8 +1683,30 @@ footer {
 /* eo page partials */
     
 
+/*******************
+* TESTIMONIALS SECTION
+****************/
 @import 'plug-ins/wcp_style';
 
+#testimonials {
+    padding: 100px 0;
+
+    @media (max-width: $medium) {
+        .single_wcp_tes_c p {
+            width: 80%;
+            margin-left: 10%;
+        }
+        .single_wcp_testimonial p {
+            font-size: 22px;
+        }
+        .owl-theme .owl-controls .owl-buttons div.owl-prev {
+            left: -14px;
+        }
+        .owl-theme .owl-controls .owl-buttons div.owl-next {
+            right: -14px;
+        }
+    }
+}
 
 @keyframes bounce {
     from, 20%, 53%, 80%, to {

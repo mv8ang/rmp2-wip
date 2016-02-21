@@ -495,13 +495,6 @@ a:hover .fa-circle {
 }
 
 /*******************
-* TESTIMONIALS SECTION
-****************/
-#testimonials {
-  padding: 100px 0;
-}
-
-/*******************
 * PHOTOWRAP SECTION
 *******************/
 #photowrap {
@@ -1452,6 +1445,9 @@ footer p {
 }
 
 /* eo page partials */
+/*******************
+* TESTIMONIALS SECTION
+****************/
 /*************************
 * TESTIMONIALS on HOMEPAGE
 **************************/
@@ -1476,6 +1472,25 @@ div.owl-carousel.owl-theme .single_wcp_testimonial img {
   border: 3px solid #282828;
   height: 80px;
   width: 80px;
+}
+
+#testimonials {
+  padding: 100px 0;
+}
+@media (max-width: 992px) {
+  #testimonials .single_wcp_tes_c p {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #testimonials .single_wcp_testimonial p {
+    font-size: 22px;
+  }
+  #testimonials .owl-theme .owl-controls .owl-buttons div.owl-prev {
+    left: -14px;
+  }
+  #testimonials .owl-theme .owl-controls .owl-buttons div.owl-next {
+    right: -14px;
+  }
 }
 
 @-webkit-keyframes bounce {
