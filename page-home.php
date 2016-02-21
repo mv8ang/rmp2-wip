@@ -33,7 +33,7 @@
     
     <section id="content-home">
         <div class="container">
-            <div class="row mt-mobile mb">
+            <div class="row mt-mobile mb-mobile">
                 <div class="text-justify col-md-5">
                     <h2>Hvad er Regn med penge?</h2>
                     <p>Regn med penge er et simpelt digitalt regneredskab, som kan styrke børns læring med 10-talssystemet samt deres talforståelse. Tallene visualiseres gennem penge så det bliver nemmere at forstå 10'ernes betydning, og hvordan tallene hænger sammen. Regn med penge er tiltænkt børn i 0-2.kl.</p>

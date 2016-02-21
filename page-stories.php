@@ -35,9 +35,9 @@
             <div class="row">
                 <!-- nav tabs -->
                 <ul class="nav nav-pills nav-justified" role="tablist">
-                    <li role="presentation" class="active"><a href="#0klasse" aria-controls="home" role="tab" data-toggle="tab">0 klasse</a></li>
-                    <li role="presentation"><a href="#1klasse" aria-controls="profile" role="tab" data-toggle="tab">1 klasse</a></li>
-                    <li role="presentation"><a href="#2klasse" aria-controls="messages" role="tab" data-toggle="tab">2 klasse</a></li>
+                    <li role="presentation" class="active presentation"><a href="#0klasse" aria-controls="home" role="tab" data-toggle="tab">0 klasse</a></li>
+                    <li role="presentation" class="presentation"><a href="#1klasse" aria-controls="profile" role="tab" data-toggle="tab">1 klasse</a></li>
+                    <li role="presentation" class="presentation"><a href="#2klasse" aria-controls="messages" role="tab" data-toggle="tab">2 klasse</a></li>
                 </ul>
 
                 <!-- tab panes -->
