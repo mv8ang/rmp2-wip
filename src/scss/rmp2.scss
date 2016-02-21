@@ -1583,8 +1583,14 @@ footer {
         position: relative;
         z-index: 5;
         
+        @media (max-width: $small), (min-width: $medium) and (max-width: $large) { 
+            width: 75%;
+        }
+        @media (max-width: $xs) {
+            width: 90%;
+        }
     }
-
+    
     &.right a:after,
     &.left a:after {
         border: 2px solid $dark-grey;
@@ -1646,6 +1652,12 @@ footer {
         
         & a:after {
             background-color: $dark-purple;
+        }
+    }
+    
+    @media (max-width: $medium) {
+        &.right {
+            margin-top: $margin-mobile;
         }
     }
 }

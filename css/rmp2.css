@@ -1375,6 +1375,16 @@ footer p {
   position: relative;
   z-index: 5;
 }
+@media (max-width: 768px), (min-width: 992px) and (max-width: 1200px) {
+  .intro-card a {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .intro-card a {
+    width: 90%;
+  }
+}
 .intro-card.right a:after, .intro-card.left a:after {
   border: 2px solid #282828;
   background: transparent;
@@ -1426,6 +1436,11 @@ footer p {
 }
 .intro-card.right:hover a:after {
   background-color: #47356c;
+}
+@media (max-width: 992px) {
+  .intro-card.right {
+    margin-top: 25px;
+  }
 }
 
 .page-press #content-home-2 img {
