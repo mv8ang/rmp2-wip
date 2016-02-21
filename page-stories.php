@@ -46,10 +46,10 @@
                     <!-- 0. klasse stories -->
                     <div role="tabpanel" class="tab-pane fade in container active" id="0klasse">
                         <div class="row text-center mt-mobile">
-                            <div class="col-xs-6">
+                            <div class="col-md-6">
                                 <a href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Regnehistorier-til-0-klasse.pdf'; ?>" class="dl-all pdf">Hent alle historier til 0. klasse som pdf her</a> 
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-md-6">
                                 <a href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Regnehistorier-til-0-klasse-audiofiler.rar'; ?>" class="dl-all audio">Hent alle audiofiler til 0. klasses historier her</a>
                             </div>
                         </div>
@@ -95,10 +95,10 @@
                     <!-- 1. klasse stories -->
                     <div role="tabpanel" class="tab-pane fade container" id="1klasse">
                         <div class="row text-center mt-mobile">
-                            <div class="col-xs-6">
+                            <div class="col-md-6">
                                 <a href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Regnehistorier-til-1-klasse.pdf'; ?>" class="dl-all pdf">Hent alle historier til 1. klasse som pdf her</a> 
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-md-6">
                                 <a href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Regnehistorier-til-1-klasse-audiofiler.rar'; ?>" class="dl-all audio">Hent alle audiofiler til 1. klasses historier her</a>
                             </div>
                         </div>
@@ -163,10 +163,10 @@
                     <!-- 2. klasse stories -->
                     <div role="tabpanel" class="tab-pane fade container" id="2klasse">
                         <div class="row text-center mt-mobile">
-                            <div class="col-xs-6">
+                            <div class="col-md-6">
                                 <a href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Regnehistorier-til-2-klasse.pdf'; ?>" class="dl-all pdf">Hent alle historier til 0. klasse som pdf her</a> 
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-md-6">
                                 <a href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Regnehistorier-til-2-klasse-audiofiler.rar'; ?>" class="dl-all audio">Hent alle audiofiler til 2. klasses historier her</a>
                             </div>
                         </div>
