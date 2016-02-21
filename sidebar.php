@@ -28,7 +28,7 @@
                 <li><a href="<?php echo get_site_url() . '/historier/'; ?>">Historier</a></li>
             </ul>
         </aside>
-        <aside class="col-sm-12 col-md-1">
+        <aside class="col-xs-12 col-md-1">
             <h3 class="widget-title">Følg os</h3>
             <div>
                 <a href="https://www.facebook.com/regnmedpenge" class="social offset facebook" target="_blank">f</a>
