@@ -810,6 +810,17 @@ footer {
     }
 }
 
+.page-parents {
+    #content-home {
+        ul {
+            li {
+                @media (max-width: $medium) {
+                    background-position: 0 10px;
+                }
+            }
+        }
+    }
+}
 .btn-play {
     a {
         display: block;

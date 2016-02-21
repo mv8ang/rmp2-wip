@@ -752,6 +752,12 @@ footer p {
   background-position: 10px;
 }
 
+@media (max-width: 992px) {
+  .page-parents #content-home ul li {
+    background-position: 0 10px;
+  }
+}
+
 .btn-play a {
   display: block;
   position: relative;
