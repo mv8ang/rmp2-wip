@@ -317,7 +317,7 @@
             <div class="row text-center">
                 <h2 class="cta-title">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green swing">
-                    <a href="#" class="">Prøv Regn med Penge</a>
+                    <a href="/prov-appen/" class="">Prøv Regn med Penge</a>
                 </span>
             </div>
         </div>
