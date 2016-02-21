@@ -1298,6 +1298,13 @@ footer {
                 margin-top: 25px;
             }
         }
+        
+        @media (max-width: $medium) {
+            .col-md-3 {
+                display: inline-block;
+            }
+        }
+        
     }
 }
 

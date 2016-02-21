@@ -1164,6 +1164,11 @@ footer p {
 .page-try #compatibility .devices .col-md-3, .page-try #compatibility .devices .col-md-6, .page-try #compatibility .browsers .col-md-3, .page-try #compatibility .browsers .col-md-6 {
   margin-top: 25px;
 }
+@media (max-width: 992px) {
+  .page-try #compatibility .col-md-3 {
+    display: inline-block;
+  }
+}
 
 .page-stories {
   background: whitesmoke;
