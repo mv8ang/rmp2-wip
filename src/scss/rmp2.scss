@@ -69,6 +69,14 @@ hr {
     margin-bottom: $mb; // 70px
 }
 
+.mb-mobile {
+    margin-bottom: $mb;
+
+    @media (max-width: 991px) {
+        margin-bottom: 0; // 25px
+    }
+}
+
 .pt {
     padding-top: $pt; // 150px
 }
@@ -142,6 +150,7 @@ a.navbar-brand {
 }
 .navbar-custom .navbar-collapse {
     padding: 0 20px;
+    overflow: hidden;
 }
 
 .navbar-custom #menu-main-navigation .rmp-btn {
@@ -1349,6 +1358,15 @@ footer {
             a {
                 color: $white;
                 padding: 15px;
+            }
+            
+            @media (max-width: $small) {
+                display: inline-block;
+                width: 32%;
+            }
+            
+            @media (max-width: $xs) {
+                width: 31%;
             }
         }
 

@@ -67,6 +67,15 @@ hr {
   margin-bottom: 70px;
 }
 
+.mb-mobile {
+  margin-bottom: 70px;
+}
+@media (max-width: 991px) {
+  .mb-mobile {
+    margin-bottom: 0;
+  }
+}
+
 .pt {
   padding-top: 150px;
 }
@@ -138,6 +147,7 @@ a.navbar-brand {
 
 .navbar-custom .navbar-collapse {
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .navbar-custom #menu-main-navigation .rmp-btn {
@@ -1201,6 +1211,17 @@ footer p {
 .page-stories .nav-pills li a {
   color: white;
   padding: 15px;
+}
+@media (max-width: 768px) {
+  .page-stories .nav-pills li {
+    display: inline-block;
+    width: 32%;
+  }
+}
+@media (max-width: 480px) {
+  .page-stories .nav-pills li {
+    width: 31%;
+  }
 }
 @media (min-width: 768px) {
   .page-stories .nav-pills li:first-of-type {
