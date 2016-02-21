@@ -7,7 +7,7 @@
         <aside class="col-md-1">
             
         </aside>
-        <aside class="col-md-2">
+        <aside class="col-xs-6 col-md-2">
             <h3 class="widget-title">Regn Med Penge</h3>
             <ul>
                 <li><a href="<?php echo get_site_url() . '/om-os'; ?>">Om os</a></li>
@@ -19,7 +19,7 @@
         <aside class="col-md-1">
 
         </aside>
-        <aside class="col-md-2">
+        <aside class="xol-xs-6 col-md-2">
             <h3 class="widget-title">The App</h3>
             <ul>
                 <li><a href="<?php echo get_site_url() . '/prov-appen/'; ?>" class="link-footer-try">Prøv Appen</a></li>
@@ -28,7 +28,7 @@
                 <li><a href="<?php echo get_site_url() . '/historier/'; ?>">Historier</a></li>
             </ul>
         </aside>
-        <aside class="col-md-1">
+        <aside class="col-sm-12 col-md-1">
             <h3 class="widget-title">Følg os</h3>
             <div>
                 <a href="https://www.facebook.com/regnmedpenge" class="social offset facebook" target="_blank">f</a>
