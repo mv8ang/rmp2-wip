@@ -24,7 +24,7 @@
 
     <section id="content-home">
         <div class="container">
-            <div class="row">
+            <div class="row mb mt">
                 <div class="text-left col-md-7">
                     <h2>Fordelene ved Regn med penge</h2>
                     <p>Regn med penge giver en del fordele i din undervisning fx:</p>
@@ -67,7 +67,7 @@
                         <li>Test elevernes talforståelse ved fx at bede dem finde 15 kr. frem. Herved kan du se, om de kun bruger 1 kroner eller om de også kan finde ud af at bruge 10’erne osv.</li>
                         <li>Brug gerne historierne til inspiration i undervisningen –eller find på dine egne historier</li>
                     </ul>
-                    <p><a href="#">Se, hvordan du bruger Regn med penge her.</a></p>
+                    <p><a href="/prov-appen/">Se, hvordan du bruger Regn med penge her.</a></p>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
     <section id="call-to-action">
         <div class="container">
             <div class="row text-center">
-                <h2 class="mb">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
+                <h2 class="cta-title">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>

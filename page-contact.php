@@ -31,10 +31,10 @@
         </div>
         
         <div class="row mt contact-info">
-                <div class="col-xs-12 col-sm-2 col-sm-offset-4" style="text-align: center;">
+                <div class="col-xs-12 col-sm-2 col-sm-offset-4 centered">
                     <img src=<?php echo get_template_directory_uri() . '/img/contact/Michael-rounded.png'; ?> alt="">
                 </div>
-            <div class="col-xs-12 col-sm-4" style="transform: translate(-40px,0)">
+                <div class="col-xs-12 col-sm-4 contact-info details">
                     <h4>Michael Barkholt</h4>
                     <a href="mailto:michael@corteza.dk" class="contact-email">michael@corteza.dk</a><br>
                     <a href="tel:22362120" class="contact-phone">+45 22362120</a>

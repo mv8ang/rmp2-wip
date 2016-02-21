@@ -45,15 +45,15 @@
                     
                     <!-- 0. klasse stories -->
                     <div role="tabpanel" class="tab-pane fade in container active" id="0klasse">
-                        <div class="row text-center mt">
+                        <div class="row text-center mt-mobile">
                             <div class="col-md-6">
                                 <a href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Regnehistorier-til-0-klasse.pdf'; ?>" class="dl-all pdf">Hent alle historier til 0. klasse som pdf her</a> 
                             </div>
                             <div class="col-md-6">
-                                <a href="" class="dl-all audio">Hent alle audiofiler til 0. klasses historier her</a>
+                                <a href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Regnehistorier-til-0-klasse-audiofiler.rar'; ?>" class="dl-all audio">Hent alle audiofiler til 0. klasses historier her</a>
                             </div>
                         </div>
-                        <div class="row mb mt masonry-container">
+                        <div class="row mb mt-mobile masonry-container">
                             
                             <!-- new story template -->
                             <div class="col-md-4 item">
@@ -66,7 +66,7 @@
                                     <p>Hvor mange penge koster de to ting?</p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Paa-loppemarked.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Paa-loppemarked.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@
                                     <p>Hvor meget har Anders tilbage til at købe slik for?</p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Fredagsslik.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/0-klasse/Fredagsslik.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -94,15 +94,15 @@
                     
                     <!-- 1. klasse stories -->
                     <div role="tabpanel" class="tab-pane fade container" id="1klasse">
-                        <div class="row text-center mt">
+                        <div class="row text-center mt-mobile">
                             <div class="col-md-6">
                                 <a href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Regnehistorier-til-1-klasse.pdf'; ?>" class="dl-all pdf">Hent alle historier til 1. klasse som pdf her</a> 
                             </div>
                             <div class="col-md-6">
-                                <a href="" class="dl-all audio">Hent alle audiofiler til 1. klasses historier her</a>
+                                <a href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Regnehistorier-til-1-klasse-audiofiler.rar'; ?>" class="dl-all audio">Hent alle audiofiler til 1. klasses historier her</a>
                             </div>
                         </div>
-                        <div class="row mb mt masonry-container">
+                        <div class="row mb mt-mobile masonry-container">
 
                             <!-- new story template -->
                             <div class="col-md-4 item">
@@ -115,7 +115,7 @@
                                     <p>Hvor mange penge koster de to ting?</p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Paa-loppemarked.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Paa-loppemarked.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -131,7 +131,7 @@
                                     <p>Hvor meget har Anders tilbage til at købe slik for?</p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Fredagsslik.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Fredagsslik.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -150,7 +150,7 @@
                                     <p>Hvor meget har Karens far købt ind for?</p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Morgenmad-til-undsaetning.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/1-klasse/Morgenmad-til-undsaetning.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -162,15 +162,15 @@
                     
                     <!-- 2. klasse stories -->
                     <div role="tabpanel" class="tab-pane fade container" id="2klasse">
-                        <div class="row text-center mt">
+                        <div class="row text-center mt-mobile">
                             <div class="col-md-6">
                                 <a href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Regnehistorier-til-2-klasse.pdf'; ?>" class="dl-all pdf">Hent alle historier til 0. klasse som pdf her</a> 
                             </div>
                             <div class="col-md-6">
-                                <a href="" class="dl-all audio">Hent alle audiofiler til 2. klasses historier her</a>
+                                <a href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Regnehistorier-til-2-klasse-audiofiler.rar'; ?>" class="dl-all audio">Hent alle audiofiler til 2. klasses historier her</a>
                             </div>
                         </div>
-                        <div class="row mb mt masonry-container">
+                        <div class="row mb mt-mobile masonry-container">
 
                             <!-- new story template -->
                             <div class="col-md-4 item">
@@ -182,7 +182,7 @@
                                     <p>Hvor meget skal de betale for paraplyerne?</p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Blaest-eller-slud-hunden-skal-ud.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Blaest-eller-slud-hunden-skal-ud.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -203,7 +203,7 @@
                                     <p>Hvor meget har Karens far købt ind for?</p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Morgenmad-til-undsaetning.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Morgenmad-til-undsaetning.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@
                                     <p>Hvor meget får moren tilbage?</p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/I-svoemmehal.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/I-svoemmehal.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -234,7 +234,7 @@
                                     </p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Vores-eget-pizzaria-1.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Vores-eget-pizzaria-1.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -262,7 +262,7 @@
                                     
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Vores-eget-pizzaria-2.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Vores-eget-pizzaria-2.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -278,7 +278,7 @@
                                     </p>
                                     <div class="text-center">
                                         <a class="pdf" href="#">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Sammen-eller-hver-for-sig.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -299,7 +299,7 @@
                                     </p>
                                     <div class="text-center">
                                         <a class="pdf" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Mit-foerste-kæledyr.pdf'; ?>">Download PDF</a>
-                                        <a class="audio" href="#">Download audio</a>
+                                        <a class="audio" href="<?php echo get_template_directory_uri() . '/stories/2-klasse/Mit-foerste-kæledyr.wav'; ?>">Download audio</a>
                                         <a class="app" href="#">Afspil historie i app</a>
                                     </div>
                                 </div>
@@ -315,7 +315,7 @@
     <section id="call-to-action">
         <div class="container">
             <div class="row text-center">
-                <h2 class="mb">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
+                <h2 class="cta-title">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green swing">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>

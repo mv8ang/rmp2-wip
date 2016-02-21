@@ -35,10 +35,10 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-4 text-center">
-                    <div class="speech-bubble offset mt">
+                    <div class="speech-bubble offset">
                         <p>Se hvordan du bruger Regn med penge her.</p>
                         <div class="rmp-btn light">
-                            <a href="#">Gå til brugervejledningen</a>
+                            <a href="/prov-appen/">Gå til brugervejledningen</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
     <section id="call-to-action">
         <div class="container">
             <div class="row text-center">
-                <h2 class="mb">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
+                <h2 class="cta-title">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>

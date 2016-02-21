@@ -7,7 +7,7 @@
 <div id="wrapper" class="clearfix page-home">
     <section id="headerwrap" class="allwrap">
         <div class="overlay">
-            <?php echo do_shortcode('[vidbg container=".overlay" mp4="#" webm="http://rmp.mladenangelov.net/wp-content/themes/rmp2/video/rmp_loop_2.mp4" poster="#" loop="true" overlay="true" muted="true"]'); ?>
+            <?php echo do_shortcode('[vidbg container=".overlay" mp4="http://rmp.mladenangelov.net/wp-content/themes/rmp2/video/rmp_loop_2.mp4" webm="#" poster="#" loop="true" overlay="true" muted="true"]'); ?>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -19,7 +19,7 @@
                     <div class="col-lg-12 text-center">
                         <p>Et digitalt regneredskab, som styrker læringen med 10-talssystemet</p>
                         <span class="rmp-btn green mt">
-                            <a href="#" class="">Prøv app her</a>
+                            <a href="/prov-appen/" class="">Prøv app her</a>
                         </span>
                         <span class="btn-play">
                             <a href="https://www.youtube.com/watch?v=UAuavls3omQ" rel="vidbox">
@@ -33,7 +33,7 @@
     
     <section id="content-home">
         <div class="container">
-            <div class="row mt mb">
+            <div class="row mt-mobile mb">
                 <div class="text-justify col-md-5">
                     <h2>Hvad er Regn med penge?</h2>
                     <p>Regn med penge er et simpelt digitalt regneredskab, som kan styrke børns læring med 10-talssystemet samt deres talforståelse. Tallene visualiseres gennem penge så det bliver nemmere at forstå 10'ernes betydning, og hvordan tallene hænger sammen. Regn med penge er tiltænkt børn i 0-2.kl.</p>
@@ -67,9 +67,9 @@
     <section id="call-to-action">
         <div class="container">
             <div class="row text-center">
-                <h2 class="mb">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
+                <h2 class="cta-title">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green">
-                    <a href="#" class="">Prøv Regn med Penge</a>
+                    <a href="/prov-appen/" class="">Prøv Regn med Penge</a>
                 </span>
             </div>
         </div>

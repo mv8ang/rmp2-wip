@@ -1,0 +1,64 @@
+@import 'vars';
+
+@media all and (max-width: 481px) {
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    #blogwrap h1, #aboutwrap h1, #headerwrap h1, #workwrap h1 {
+        font-size: 40px;
+    }
+
+    a.navbar-brand {
+        background-image: url(../img/logo-black.png);    
+    }
+
+    .navbar-custom {
+        padding: 20px !important;
+    }
+
+    #headerwrap h1.header-secondary {
+        font-size: 30px;
+    }
+
+    
+
+    .overlay {
+        padding: 130px 0 100px;
+    }
+}
+
+.allwrap  {
+    p {
+        margin: 0;
+    }
+
+    a {
+        color:$white;
+    }
+}
+
+
+@media all and (max-width: 991px) {
+    
+    .page-try #wrapper-team .instruction {
+        height: 320px;
+    }
+    
+    .page-parents {
+        #content-home-2 {
+            img {
+                margin: 30px auto 100px;
+            }
+        }
+    }
+    
+    .page-stories{ 
+        .dl-all {
+            margin: 25px auto;
+        }
+    }
+    
+}

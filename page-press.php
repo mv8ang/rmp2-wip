@@ -32,42 +32,53 @@
                     <!-- when adding a new class, include the pdf/web class -->
                     
                     <!-- pdf template -->
-                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>FILENAMEHERE">
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>Den_lille_matematikhjælper.pdf">
                         <div class="col-md-12 press-release pdf">
-                            <p class="title">Apps med mere til matematik</p>
+                            <p class="title">Værktøjer og hjælpemidler</p>
                             <div class="release-meta">
-                                <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                <span class="posted-on">30/12/2015</span> | <span class="posted-by">Den Lille Matematikhjælper</span>
                             </div>
                         </div>
                     </a>
                     <!-- eot -->
                     
-                    <!-- link template -->
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-05-05_Apps_med_mere_til_matematik.pdf">
+                        <div class="col-md-12 press-release pdf">
+                                 <p class="title">Blogpost om Regn med Penge</p>
+                            <div class="release-meta">
+                                <span class="posted-on">05/05/2014</span> | <span class="posted-by">Apps med mere til matematik</span>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!-- link template 
                     <a href="LINKHERE">
                         <div class="col-md-12 press-release web">
                             <p class="title">Apps med mere til matematik</p>
                             <div class="release-meta">
-                                <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                <span class="posted-on">05/05/2014</span> | <span class="posted-by">Claus Nørgår</span>
                             </div>
                         </div>
                     </a>
-                    <!-- eot -->
+                     -->
                     
                     
-                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-02-14_Min_Kusine_Maria.pdf">
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-03-27_Pædagogisk_udviklingscenter_Kulsbjergskole.pdf">
                         <div class="col-md-12 press-release pdf">
-                            <p class="title">Apps med mere til matematik</p>
+                            <p class="title">Blogpost om Regn med Penge</p>
                             <div class="release-meta">
-                                <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                <span class="posted-on">27/03/2014</span> | <span class="posted-by">Pædagogisk Udviklingscenter</span>
                             </div>
                         </div>
                     </a>
                     
-                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-02-14_Min_Kusine_Maria.pdf">
+
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-02-26_SkoleApps.pdf">
                         <div class="col-md-12 press-release pdf">
-                            <p class="title">Apps med mere til matematik</p>
+                            <p class="title">Blogpost om Regn med Penge</p>
                             <div class="release-meta">
-                                <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                <span class="posted-on">26/02/2014</span> | <span class="posted-by">Skole Apps</span>
                             </div>
                         </div>
                     </a>
@@ -75,74 +86,55 @@
                     
                     
                     
-                    <div class="col-md-12 collapse" id="demo" style="height: 0px;">
+                    <div class="collapse" id="demo" style="height: 0px;">
                         
                         <!-- place hidden pr links here -->
-                        <a href="#">
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-02-26_it4education.pdf">
                             <div class="col-md-12 press-release pdf">
-                                <p class="title">Apps med mere til matematik</p>
+                                <p class="title">Regn med Penge</p>
                                 <div class="release-meta">
-                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                    <span class="posted-on">26/02/2014</span> | <span class="posted-by">IT4Education</span>
                                 </div>
                             </div>
                         </a>
-                        <a href="#">
+
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-02-25_IT_i_skolen.pdf">
                             <div class="col-md-12 press-release pdf">
-                                <p class="title">Apps med mere til matematik</p>
+                                <p class="title">Regnmedpenge.dk</p>
                                 <div class="release-meta">
-                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                    <span class="posted-on">25/02/2014</span> | <span class="posted-by">IT i Skolen</span>
                                 </div>
                             </div>
                         </a>
-                        <a href="#">
+
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-02-14_Min_Kusine_Maria.pdf">
                             <div class="col-md-12 press-release pdf">
-                                <p class="title">Apps med mere til matematik</p>
+                                <p class="title">Regn med Penge</p>
                                 <div class="release-meta">
-                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                    <span class="posted-on">18/02/2014</span> | <span class="posted-by">Min Kusine Maria</span>
                                 </div>
                             </div>
                         </a>
-                        <a href="#">
+
+
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2014-02-06_ipad_Langager.pdf">
                             <div class="col-md-12 press-release pdf">
-                                <p class="title">Apps med mere til matematik</p>
+                                <p class="title">Regn med Penge</p>
                                 <div class="release-meta">
-                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                    <span class="posted-on">06/02/2014</span> | <span class="posted-by">iPad Langager</span>
                                 </div>
                             </div>
                         </a>
-                        <a href="#">
+
+
+                    <a href="<?php echo get_template_directory_uri() . '/pr-materials/'; ?>2013-12-05_iPadiskolen.pdf">
                             <div class="col-md-12 press-release pdf">
-                                <p class="title">Apps med mere til matematik</p>
+                                <p class="title">Regnmedpenge.dk</p>
                                 <div class="release-meta">
-                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
+                                    <span class="posted-on">05/12/2013</span> | <span class="posted-by">iPadiskolen</span>
                                 </div>
                             </div>
                         </a>
-                        <a href="#">
-                            <div class="col-md-12 press-release pdf">
-                                <p class="title">Apps med mere til matematik</p>
-                                <div class="release-meta">
-                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="col-md-12 press-release pdf">
-                                <p class="title">Apps med mere til matematik</p>
-                                <div class="release-meta">
-                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="col-md-12 press-release pdf">
-                                <p class="title">Apps med mere til matematik</p>
-                                <div class="release-meta">
-                                    <span class="posted-on">May 05, 2015</span> | <span class="posted-by">by Claus Nørgår</span>
-                                </div>
-                            </div>
-                        </a>
-                        
                         
                     </div>
 
@@ -207,7 +199,7 @@
     <section id="call-to-action">
         <div class="container">
             <div class="row text-center">
-                <h2 class="mb">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
+                <h2 class="cta-title">Forny din matematik undervisning. Prøv det nu - <strong>gratis</strong> og altid tilgængelig!</h2>
                 <span class="rmp-btn green">
                     <a href="#" class="">Prøv Regn med Penge</a>
                 </span>

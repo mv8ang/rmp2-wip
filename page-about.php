@@ -84,8 +84,8 @@
     <section id="call-to-action">
         <div class="row">
             <div class="col-md-6 call-left">
-                <div class="row mb mt">
-                    <div class="col-md-7 pull-right call-content text-center">
+                <div class="row">
+                    <div class="col-lg-7 col-md-10 pull-right call-content text-center">
                         <h2>Kontakt</h2>
                         <p>Hvis du har ider, ris eller ros, er du velkommen til at kontakte Michael Barkholt.</p>
                         <a href="mailto:michael@corteza.dk" class="email" target="_blank">michael@corteza.dk</a>
@@ -95,8 +95,8 @@
             </div>
             
             <div class="col-md-6 call-right">
-                <div class="row mb mt">
-                    <div class="col-md-7 pull-left call-content text-center">
+                <div class="row">
+                    <div class="col-lg-7 col-md-10 pull-left call-content text-center">
                         <h2>Presse</h2>
                         <p>Regn med Penge bliver af og til anmeldt og nævn. Se presseomtaler og design materialer her.</p>
                         
