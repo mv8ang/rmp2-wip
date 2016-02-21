@@ -1283,6 +1283,14 @@ footer {
             }
             
         }
+        
+        .instruction-wrapper {
+            @media (max-width: $medium) {
+                &:not(:first-of-type) {
+                    margin-top: $margin-mobile;
+                }
+            }
+        }
     }
     
     #compatibility {

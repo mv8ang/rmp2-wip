@@ -1154,6 +1154,11 @@ footer p {
   margin-bottom: 25px;
   width: 150px;
 }
+@media (max-width: 992px) {
+  .page-try #wrapper-team .instruction-wrapper:not(:first-of-type) {
+    margin-top: 25px;
+  }
+}
 .page-try #compatibility {
   padding-bottom: 70px;
 }
